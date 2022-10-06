@@ -1,2 +1,17 @@
-@import './common';
-@import './example';
+@import './base/common';
+@import './base/container';
+
+@import './layout/header';
+@import './layout/hero';
+@import './layout/products';
+@import './layout/about';
+@import './layout/advanteges';
+@import './layout/gallery';
+@import './layout/reviews';
+@import './layout/contacts';
+@import './layout/footer';
+@import './layout/modal-hero';
+@import './layout/modal-products';
+@import './layout/modal-about';
+@import './layout/modal-location';
+@import './layout/modal-franchise';
