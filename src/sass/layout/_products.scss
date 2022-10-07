@@ -1,0 +1,110 @@
+.products {
+    padding-top: 60px;
+}
+
+
+// .container {}
+
+.products__label {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.22;
+    text-align: center;
+    // letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: #131313;
+
+    margin-bottom: 12px;
+
+}
+
+.products__title {
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.26;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    
+    color: #131313;
+
+    margin-bottom: 148px;
+}
+
+.product-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    // align-items: center;
+    // flex-direction: column;
+    padding: 0;
+    margin: 0;
+    min-width: 280px;
+    height: 100%;
+
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+.product-cards__item {
+    margin-bottom: 164px;
+}
+.product-cards__item:last-child {
+    margin-bottom: 80px;
+}
+.product-cards__item--color-icecream {
+    background: #AEC6A5;
+    border-radius: 24px;
+}
+.product-cards__item--color-icecoffee {
+    background: #EFD478;
+    border-radius: 24px;
+}
+.product-cards__item--color-milkshakes {
+    background: #D6936D;
+    border-radius: 24px;
+}
+
+
+.product-cards__subtitle {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: #131313;
+
+    margin-top: 123px;
+    margin-bottom: 40px;
+}
+
+.product-cards__text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.78;
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: #131313;
+
+    margin-bottom: 90px;
+}
+
+.product-cards__button {
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    // margin-left: 120px;
+    // margin-right: 120px;
+}
