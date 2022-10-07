@@ -1,64 +1,56 @@
 <!-- backdrop -->
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-        <button type="button" class="modal-close-btn" data-modal-close>
-            <svg class="modal-close-icon" width="20" height="20">
+        <button type="modal__button" class="modal-close-btn" data-modal-close>
+            <!-- <svg class="modal-close-icon" width="20" height="20">
                 <use href=""></use>
-            </svg>
+            </svg> -->
         </button>
 
         <!-- modal form -->
         <form class="modal-form">
-            <p class="modal-title">Buy now</p>
+            <p class="modal-form__title">Buy now</p>
 
             <div role="group" aria-labelledby="products-check-modal-hero">
 
-                <label class="modal-check">
-                    <input class="modal-check-input visually-hidden" type="checkbox" name="ice cream" required>
-                    <svg class="modal-check-icon" width="16" height="15">
-                        <use class="modal-icon-check-mark" href=""></use>
-                    </svg>
+                <label class="modal-form__check">
+                    <input class="modal-form__input visually-hidden" type="checkbox" name="ice cream" required>
                     ice cream
                 </label>
 
-                <label class="modal-check">
-                    <input class="modal-check-input visually-hidden" type="checkbox" name="ice coffee" required>
-                    <svg class="modal-check-icon" width="16" height="15">
-                        <use class="modal-icon-check-mark" href=""></use>
-                    </svg>
+                <label class="modal-form__check">
+                    <input class="modal-form__input visually-hidden" type="checkbox" name="ice coffee" required>
                     ice coffee
                 </label>
 
-                <label class="modal-check">
-                    <input class="modal-check-input visually-hidden" type="checkbox" name="milkshake" required>
-                    <svg class="modal-check-icon" width="16" height="15">
-                        <use class="modal-icon-check-mark" href=""></use>
-                    </svg>
+                <label class="modal-form__check">
+                    <input class="modal-form__input visually-hidden" type="checkbox" name="milkshake" required>
                     milkshake
                 </label>
             </div>
 
             <label class="modal-label">
-                <span class="modal-label-title">Name</span>
-                <span class="modal-input-wrapper">
-                    <input class="modal-input" type="text" name="user-name" required pattern="[a-zA-Zа-яА-ЯіІїЇъЪёЁ`]+">
+                <span class="modal-label__title">Name</span>
+                <span class="modal-label__input-wrapper">
+                    <input class="modal-label__input" type="text" name="user-name" required
+                        pattern="[a-zA-Zа-яА-ЯіІїЇъЪёЁ`]+">
                 </span>
             </label>
 
             <label class="modal-label">
-                <span class="modal-label-title">Phone</span>
-                <span class="modal-input-wrapper">
-                    <input class="modal-input" type="tel" name="user-phone-number" required
+                <span class="modal-label__title">Phone</span>
+                <span class="modal-label__input-wrapper">
+                    <input class="modal-label__input" type="tel" name="user-phone-number" required
                         pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="XXX-XXX-XX-XX">
                 </span>
             </label>
 
             <label class="modal-message">
-                <span class="modal-label-title">Comment</span>
-                <textarea class="modal-message-form" name="user-message" placeholder="Введите текст"></textarea>
+                <span class="modal-message__title">Comment</span>
+                <textarea class="modal-message__form" name="user-message" placeholder="Введите текст"></textarea>
             </label>
 
-            <button type="submit" class="modal-submit-btn">Submit</button>
+            <button type="submit" class="modal-form__submit-btn">Submit</button>
         </form>
     </div>
 </div>
