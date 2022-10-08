@@ -1,0 +1,76 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+p,
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.icon {
+  fill: currentColor;
+}
+
+.container {
+  width: 100%;
+  max-width: 480;
+  padding: 0 20px;
+}
+
+:root {
+  --color-accent: #F8D24E;
+  --color-hover: #0A8817;
+  --bg-color-top: #84A278;
+  --bg-color-ice-cream: #AEC6A5;
+  --bg-color-ice-coffee: #EFD478;
+  --bg-color-milkshakes: #D6936D;
+  --bg-color-mobile-menu: #97AF8D;
+  --bg-color-modal: #FCFCFC;
+  --bg-color-input: rgba(248, 210, 78, 0.1);
+  --text-color_dark: #131313;
+  --text-color_light: #FCFCFC;
+  --text-color_address: #D6936D;
+  --text-color_schedule: #907E82;
+  --font-top: "Montserrat", sans-serif;
+  --font-title: "Seymour One", sans-serif;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
+p {
+  color: tomato;
+}/*# sourceMappingURL=index.css.map */
