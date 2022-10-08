@@ -3,6 +3,8 @@
 
 @import './utils/variables';
 @import './utils/visually-hidden';
+@import './utils/mixins';
+@import './components/title.scss';
 
 @import './layout/header';
 @import './layout/hero';

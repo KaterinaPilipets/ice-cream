@@ -35,11 +35,15 @@ img {
 
 }
 
-// body {
-//     font-family: var(--font-family-primary);
-//     font-size: 14px;
-//     line-height: (24px / 14px);
-//     letter-spacing: 0.03em;
-//     background-color: var(--color-bg-primary);
-//     color: var(--color-text);
-// }
+body {
+    font-family: var(--font-top);
+    font-size: 12px;
+    line-height: 1.76;
+    letter-spacing: 0.04em;
+    background-color: var(--bg-color-top);
+    color: var(--text-color_light);
+
+    @include desktop {
+        font-size: 16px;
+    }
+}
