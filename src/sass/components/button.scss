@@ -1,0 +1,18 @@
+.button {
+    padding: 12px 34px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 1.29;
+    color: var(--text-color_dark);
+}
+
+.button_accent {
+    background-color: var(--color-accent);
+}
+
+.button_border {
+    border: 2px solid #F8D24E;
+
+}
