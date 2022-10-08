@@ -1,3 +1,64 @@
-// section__lable
-// section__title
-// section__toptitle
+.section__lable {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.22;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    @include tablet {
+        font-size: 22px;
+    }
+    @include desktop {
+        font-size: 30px;
+        line-height: 1.23;
+        letter-spacing: 0.04em;
+    }
+}
+.section__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    
+    @include tablet {
+        font-size: 22px;
+        line-height: 1.22;
+    }
+    @include desktop {
+        font-size: 30px;
+        line-height: 1.23;
+    }    
+
+}
+.section__modal-title {
+    font-family: var(--font-title);
+    font-size: 16px;
+    line-height: 1.5;
+
+    @include tablet {
+        font-size: 20px;
+        line-height: 1.4;
+    }
+
+}
+
+.section__toptitle {
+    font-family: var(--font-title);
+    font-size: 30px;
+    line-height: 1.26;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    @include tablet {
+        font-size: 34px;
+    }
+    @include desktop {
+        font-size: 36px;
+        line-height: 1.25;
+        letter-spacing: 0.06em;
+    }
+    
+}
