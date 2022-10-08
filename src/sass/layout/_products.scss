@@ -78,13 +78,16 @@
     margin: 0 auto;
     margin-bottom: 20px;
 
-    // background-color: transparent;
-    // border: transparent;
+    background-color: transparent;
+    border: transparent;
     width: 40px;
+    height: 20px;
 
 }
 
-// .product-cards__icon {
-//     // display: flex;
-//     // width: 40px;
-// }
+.product-cards__icon {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
