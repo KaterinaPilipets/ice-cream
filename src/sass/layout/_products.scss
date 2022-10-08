@@ -1,0 +1,90 @@
+.products {
+    padding-top: 60px;
+    background-color: white;
+}
+
+
+// .container {}
+
+.section__lable {
+    color: var(--text-color_dark);
+}
+
+.section__toptitle {
+    color: var(--text-color_dark);
+
+    margin-bottom: 148px;
+}
+
+.product-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    // align-items: center;
+    // flex-direction: column;
+    padding: 0;
+    margin: 0;
+    min-width: 280px;
+    height: 100%;
+}
+
+.product-cards__item {
+    margin-bottom: 164px;
+}
+
+.product-cards__item:last-child {
+    margin-bottom: 80px;
+}
+
+.product-cards__item--color-icecream {
+    background: var(--bg-color-ice-cream);
+    border-radius: 24px;
+}
+
+.product-cards__item--color-icecoffee {
+    background: var(--bg-color-ice-coffee);
+    border-radius: 24px;
+}
+
+.product-cards__item--color-milkshakes {
+    background: var(--bg-color-milkshakes);
+    border-radius: 24px;
+}
+
+
+.section__title {
+    color: var(--text-color_dark);
+
+    margin-top: 123px;
+    margin-bottom: 40px;
+}
+
+.product-cards__text {
+    font-family: var(--font-top);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.78;
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: var(--text-color_dark);
+
+    margin-bottom: 90px;
+}
+
+.product-cards__button {
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+    // background-color: transparent;
+    // border: transparent;
+    width: 40px;
+
+}
+
+// .product-cards__icon {
+//     // display: flex;
+//     // width: 40px;
+// }
