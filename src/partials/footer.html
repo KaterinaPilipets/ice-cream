@@ -1,0 +1,50 @@
+<footer class="page-footer" id="footer">
+    <!-- Створив контейнер оскільки відступи по краях у всіх секціях однакові -->
+    <div class="container">
+        <!-- Два контейнери для стилізації різних версій відображення відносно екрану, це перший контейнер -->
+        <div class="page-footer__text-container">
+            <p class="page-footer__title">homemade ice cream made</p>
+            <p class="page-footer__text">with passion</p>
+        </div>
+        <!-- Два контейнери для стилізації різних версій відображення відносно екрану, це другий контейнер -->
+        <div class="page-footer__contacts-container">
+            <ul class="page-footer__social-network-list">
+                <li class="page-footer__social-network-item">
+                    <a class="page-footer__social-netwok-link" href="https://github.com/" target="_blank"
+                        rel="noreferrer noopener">
+                        <!-- задав початкові розміри свг щоб на сторінці без стилів хоч більш-менш виглядало -->
+                        <svg class="page-footer__social-netwok-icon" width="32" height="32">
+                            <use href="./images/icons.svg#icon__github"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="page-footer__social-network-item">
+                    <a class="page-footer__social-netwok-link" href="https://web.telegram.org/" target="_blank"
+                        rel="noreferrer noopener">
+                        <svg class="page-footer__social-netwok-icon" width="32" height="32">
+                            <use href="./images/icons.svg#icon__telegram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="page-footer__social-network-item">
+                    <a class="page-footer__social-netwok-link" href="https://www.facebook.com/" target="_blank"
+                        rel="noreferrer noopener">
+                        <svg class="page-footer__social-netwok-icon" width="32" height="32">
+                            <use href="./images/icons.svg#icon__facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <p class="page-footer__phone-text">
+                Feel free to contact
+                <a class="page-footer__phone-link" href="tel:+610383766284">+61 (0) 383 766 284</a>
+            </p>
+        </div>
+    </div>
+    <!-- Окремо взям абзац щоб стилізувати верню лінію. Зроблю її просто верхнім бордером.  -->
+    <!-- Окремо тому що в різних версіях відображення вони то не дістають країв, то дістають -->
+    <p class="page-footer__copyright-container">
+        <span class="page-footer__copyright-about">&#169; 2022 - IceCream.</span>
+        <span class="page-footer__copyright">All Rights Reserved.</span>
+    </p>
+</footer>
