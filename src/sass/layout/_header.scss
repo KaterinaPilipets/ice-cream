@@ -1,0 +1,31 @@
+.page-header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 12px;
+  padding-bottom: 61px;
+}
+.page-header__logo {
+  width: 40px;
+  height: 37px;
+}
+.navigation {
+  display: none;
+}
+.header__btn-group {
+  display: flex;
+  align-items: center;
+}
+.header-menu {
+  line-height: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+.header__btn-burger {
+  width: 32px;
+  height: 32px;
+}
+.button {
+  display: none;
+}
