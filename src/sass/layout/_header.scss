@@ -9,6 +9,17 @@
     padding-top: 20px;
     padding-bottom: 6px;
   }
+
+  @include desktop {
+    justify-content: left;
+    padding-top: 8px;
+    padding-bottom: 4px;
+  }
+}
+.page-header__logo-link {
+  @include desktop {
+    margin-right: 269px;
+  }
 }
 .page-header__logo {
   width: 40px;
@@ -18,16 +29,51 @@
     width: 48px;
     height: 44px;
   }
+
+  @include desktop {
+    width: 60px;
+    height: 65px;
+  }
 }
 .navigation {
   display: none;
+
+  @include desktop {
+    display: flex;
+  }
 }
+.navigation__list {
+  @include desktop {
+    display: flex;
+    gap: 27px;
+  }
+}
+.navigation__link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 14px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.22;
+
+  &:hover,
+  &:focus {
+    color: #f8d24e;
+  }
+}
+
 .header__btn-group {
   display: flex;
   align-items: center;
 
   @include tablet {
     gap: 32px;
+  }
+
+  @include desktop {
+    margin-left: auto;
+    padding-top: 20px;
+    margin-bottom: 4px;
   }
 }
 .header-menu {
@@ -39,6 +85,10 @@
 .header__btn-burger {
   width: 32px;
   height: 32px;
+
+  @include desktop {
+    display: none;
+  }
 }
 .buy-now__button {
   display: none;
