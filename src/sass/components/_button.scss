@@ -6,12 +6,14 @@
     font-size: 14px;
     line-height: 1.29;
     color: var(--text-color_dark);
+    display: flex;
+    gap: 6px;
 }
 
 .button_accent {
     background-color: var(--color-accent);
-    display: flex;
-    gap: 6px;
+    border: none;
+
 }
 
 .button_border {
