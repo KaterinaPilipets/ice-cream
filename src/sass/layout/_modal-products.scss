@@ -1,0 +1,12 @@
+.modal-products {
+    @include tablet {
+
+        height: 995px;
+    }
+}
+
+.modal-products__toptitle {
+    font-size: 20px;
+    line-height: 1.4;
+
+}
