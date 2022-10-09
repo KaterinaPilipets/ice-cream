@@ -8,6 +8,8 @@
     color: var(--text-color_dark);
     display: flex;
     gap: 6px;
+    justify-content: center;
+    align-items: center;
 }
 
 .button_accent {
@@ -18,5 +20,11 @@
 
 .button_border {
     border: 2px solid #F8D24E;
+
+}
+
+.button__arrow {
+   width: 12px;
+   height: 12px;
 
 }
