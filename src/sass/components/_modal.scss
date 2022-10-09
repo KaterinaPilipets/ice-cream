@@ -1,0 +1,36 @@
+.modal {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1) rotate(0deg);
+    max-width: 280px;
+    padding: 28px;
+    background-color: var(--color-bg-primary);
+    color: var(--text-color_dark);
+}
+
+// .backdrop.is-hidden .modal {
+//     border-radius: 50%;
+//     background-color: var(--color-accent);
+//     transform: translate(100%, 100%) scale(2) rotate(720deg);
+// }
+
+.closed {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+
+    background-color: inherit;
+    // transition: color var(--animetion-time-func);
+
+    &:hover,
+    &:focus {
+        color: var(--color-accent);
+    }
+}
