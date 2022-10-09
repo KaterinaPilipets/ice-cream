@@ -6,7 +6,19 @@
   }
   &__item {
     width: 100%;
+    //   @media screen and (min-width: 768px) {
+    //     width: calc((100% - 80px) / 2);
+    //   }
+
+    //   @include width: calc((100% - 80px) / 2);
+    //
+    // @mixin tablet {
+    //   @media screen and (min-width: 768px) {
+    //     @content;
+    //   }
+    // }
   }
+
   &__number {
     width: 100%;
     text-align: center;
