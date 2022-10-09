@@ -1,0 +1,56 @@
+<!-- backdrop -->
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button type="button" class="modal__close-btn" data-modal-close>
+            <!-- <svg class="modal-close-icon" width="20" height="20">
+                <use href=""></use>
+            </svg> -->
+        </button>
+
+        <!-- modal form -->
+        <form class="modal-form">
+            <p class="modal-form__title">Buy now</p>
+
+            <div role="group">
+
+                <label class="modal-form__check">
+                    <input class="modal-form__input visually-hidden" type="checkbox" name="ice cream" required>
+                    ice cream
+                </label>
+
+                <label class="modal-form__check">
+                    <input class="modal-form__input visually-hidden" type="checkbox" name="ice coffee" required>
+                    ice coffee
+                </label>
+
+                <label class="modal-form__check">
+                    <input class="modal-form__input visually-hidden" type="checkbox" name="milkshake" required>
+                    milkshake
+                </label>
+            </div>
+
+            <label class="modal-label">
+                <!-- Name -->
+                <span class="modal-label__input-wrapper">
+                    <input class="modal-label__input" type="text" name="user-name" required
+                        pattern="[a-zA-Zа-яА-ЯіІїЇъЪёЁ`]+">
+                </span>
+            </label>
+
+            <label class="modal-label">
+                <!-- Phone -->
+                <span class="modal-label__input-wrapper">
+                    <input class="modal-label__input" type="tel" name="user-phone-number" required
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="XXX-XXX-XX-XX">
+                </span>
+            </label>
+
+            <label class="modal-message">
+                <!-- Comment -->
+                <textarea class="modal-message__form" name="user-message" placeholder="Введите текст"></textarea>
+            </label>
+
+            <button type="submit" class="modal-form__submit-btn">Submit</button>
+        </form>
+    </div>
+</div>
