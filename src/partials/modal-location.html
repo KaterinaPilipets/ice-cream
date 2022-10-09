@@ -1,16 +1,53 @@
 
 <div class="backdrop is-hidden" data-modal-location>
-   <div class="modal">
-    <button type="button" class="modal-close-btn" data-modal-close>
-        <svg class="modal-close-icon" width="20" height="20">
-          <use href="./images/icons.svg#icon__close"></use>
-        </svg>
-      </button>
-      <p class="modal-location">Our Locations</p>
-      <!-- <img src="" alt="Map"> -->
+  <div class="modal">
+   <button type="button" class="modal-close-btn" data-modal-close>
+       <svg class="modal-close-icon" width="20" height="20">
+         <use href="./images/icons.svg#icon__close-big"></use>
+       </svg>
+   </button>
+     <p class="modal-location section__modal-title">Our Locations</p>
+     <picture>
+       <source
+         srcset="
+           ./images/modal/map-desktop.webp    1x,
+           ./images/modal/map-desktop@2x.webp 2x
+         "
+         media="(min-width: 1200px)"
+         type="image/webp"
+       />
+       <source
+         srcset="
+           ./images/modal/map-desktop.jpg    1x,
+           ./images/modal/map-desktop@2x.jpg 2x
+         "
+         media="(min-width: 1200px)"
+       />
+       
+       <source
+         srcset="
+           ./images/modal/map-mobile.webp    1x,
+           ./images/modal/map-mobile@2x.webp 2x
+         "
+         media="(max-width: 767px)"
+         type="image/webp"
+       />
+       <source
+         srcset="
+           ./images/modal/map-mobile.jpg    1x,
+           ./images/modal/map-mobile@2x.jpg 2x
+         "
+         media="(max-width: 767px)"
+       />
+       <img
+         class="image"
+         src="./images/modal/map-mobile.jpg"
+         alt="map"
+       />
+     </picture>
 
-      <form action="https://goo.gl/maps/oBUhqxkDfbNSAMwU6">
-          <button type="submit">Open map</button>
-      </form>
-    </div>
-
+     <form action="https://goo.gl/maps/oBUhqxkDfbNSAMwU6">
+       <button class="button button_accent" type="Open map">Open map</button>
+     </form>
+  </div>
+</div>
