@@ -1,11 +1,25 @@
 .advantages {
   &__list {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     gap: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    @include tablet {
+      padding-bottom: 40px;
+      gap: 80px;
+      width: 616px;
+    }
   }
   &__item {
     width: 100%;
+    max-width: 230px;
+
+    @include tablet {
+      max-width: calc((100% - 160px) / 3);
+    }
   }
   &__number {
     width: 100%;
@@ -15,6 +29,12 @@
     font-size: 36px;
     line-height: 1.16;
     letter-spacing: 0.04em;
+    @include tablet {
+      margin-top: 32px;
+      margin-bottom: 16px;
+      font-size: 48px;
+      line-height: 1.22;
+    }
   }
   &__text {
     width: 100%;
@@ -22,6 +42,11 @@
     font-weight: 700;
     font-size: 12px;
     line-height: 1.7;
+    @include tablet {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.74;
+    }
   }
   &__item::before {
     display: block;
