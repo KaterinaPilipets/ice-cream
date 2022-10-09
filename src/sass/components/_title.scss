@@ -21,6 +21,7 @@
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
+    color: inherit;
     
     @include tablet {
         font-size: 22px;
@@ -51,6 +52,7 @@
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
+    color: inherit;
 
     @include tablet {
         font-size: 34px;
