@@ -6,8 +6,11 @@
     transform: translate(-50%, -50%) scale(1) rotate(0deg);
     max-width: 280px;
     padding: 28px;
-    background-color: var(--color-bg-primary);
+    background-color: var(--bg-color-modal);
     color: var(--text-color_dark);
+   
+    border: 2px solid var(--color-accent);
+    border-radius: 10px;
 }
 
 // .backdrop.is-hidden .modal {
@@ -16,7 +19,7 @@
 //     transform: translate(100%, 100%) scale(2) rotate(720deg);
 // }
 
-.closed {
+.modal__close {
     position: absolute;
     top: 20px;
     right: 20px;
