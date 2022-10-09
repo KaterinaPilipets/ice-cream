@@ -5,29 +5,29 @@
               <use href="./images/icons.svg#icon__close"></use>
             </svg>
         </button>
-        <p>Thank you for your interest in owning an Ice Cream shop</p>
+        <p class="section__modal-title">Thank you for your interest in owning an Ice Cream shop</p>
         <p>Due to the overwhelming volume of franchise requests we are not accepting new franchisee applications at this time. Once the application process resumes, we will contact you for further information. Please fill out the contact information below and we will reach out for additional information. We appreciate your patience.</p>
-        <form class="">
+        <form class="modal-form">
             <label class="">
-                <input type="text" class="" required pattern="[a-zA-Za-яА-ЯіІїЇ']+" name="user_name" 
+                <input class="modal-form__input" type="text" class="" required pattern="[a-zA-Za-яА-ЯіІїЇ']+" name="user_name" 
                     placeholder="Name"
                 />
             </label>
             <label class="">
-                <input type="tel" class="" required pattern="[0-9]{10}"
+                <input class="modal-form__input" type="tel" class="" required pattern="[0-9]{10}"
                     title="xxxxxxxxxx" 
                     name="user_phone"
                     placeholder="Phone"
                  />
             </label>
             <label class="">
-               <input type="mailto" class="" required name="user_maill"  placeholder="Email"/>
+               <input class="modal-form__input" type="mailto" class="" required name="user_maill"  placeholder="Email"/>
             </label>
             <label class="">
-                <textarea name="user_message" class="" placeholder="Comment" ></textarea>
+                <textarea class="modal-form__message" name="user_message" class="" placeholder="Comment" ></textarea>
             </label>
            
-            <button type="submit" class="">Submit</button>
+            <button class="buttom button_accent" type="submit" class="">Submit</button>
         </form> 
          
     
