@@ -6,15 +6,45 @@
     font-size: 14px;
     line-height: 1.29;
     color: var(--text-color_dark);
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    align-items: center;
 }
 
 .button_accent {
     background-color: var(--color-accent);
-    display: flex;
-    gap: 6px;
+    border: none;
+
+    &:hover {
+        background-color: var(--color-hover);
+    }
+
+    &:focus {
+        background-color: var(--color-hover);
+        color: var(--text-color_light);
+        fill: var(--text-color_light);
+    }
+
 }
 
 .button_border {
     border: 2px solid #F8D24E;
+
+    &:hover {
+        border-color: var(--color-hover);
+    }
+
+    &:focus {
+        border-color: var(--color-hover);
+        color: var(--text-color_light);
+        fill: var(--text-color_light);
+    }
+
+}
+
+.button__arrow {
+    width: 12px;
+    height: 12px;
 
 }

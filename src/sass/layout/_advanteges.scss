@@ -1,0 +1,45 @@
+.advantages {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+  &__item {
+    width: 100%;
+  }
+  &__number {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 18px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+  }
+  &__text {
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.7;
+  }
+  &__item::before {
+    display: block;
+    width: 50px;
+    height: 50px;
+    content: '';
+    background-size: contain;
+    margin-bottom: 18px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__cow::before {
+    background-image: url(../images/advantages/cow-1x.png);
+  }
+  &__weight::before {
+    background-image: url(../images/advantages/weight-1x.png);
+  }
+  &__ice-crema::before {
+    background-image: url(../images/advantages/ice-crema-1x.png);
+  }
+}

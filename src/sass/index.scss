@@ -5,8 +5,10 @@
 @import './utils/variables';
 @import './utils/visually-hidden';
 
-@import './components/title.scss';
-@import './components/button.scss';
+@import './components/title';
+@import './components/button';
+@import './components/backdrop';
+@import './components/modal';
 
 @import './layout/header';
 @import './layout/hero';
