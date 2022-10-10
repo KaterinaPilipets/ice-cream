@@ -12,13 +12,20 @@
       gap: 80px;
       width: 616px;
     }
+    @include desktop {
+      padding-bottom: 86px;
+      gap: 32px;
+      width: 1168px;
+    }
   }
   &__item {
     width: 100%;
     max-width: 230px;
-
     @include tablet {
       max-width: calc((100% - 160px) / 3);
+    }
+    @include desktop {
+      max-width: calc((100% - 64px) / 3);
     }
   }
   &__number {
@@ -35,6 +42,11 @@
       font-size: 48px;
       line-height: 1.22;
     }
+    @include desktop {
+      margin-top: 40px;
+      font-size: 58px;
+      line-height: 1.22;
+    }
   }
   &__text {
     width: 100%;
@@ -47,7 +59,13 @@
       font-size: 14px;
       line-height: 1.74;
     }
+    @include desktop {
+      font-size: 16px;
+      line-height: 1.76;
+      letter-spacing: 0.02em;
+    }
   }
+
   &__item::before {
     display: block;
     width: 50px;
