@@ -2,10 +2,20 @@
   border-radius: 8px;
   margin-right: auto;
   margin-left: auto;
+
   @include tablet {
     border-radius: 18px;
   }
+
   @include desktop {
     border-radius: 24px;
   }
+
 }
+
+// .bg-img {
+//   background-image: linear-gradient(var(--bg-color-top), var(--bg-color-top)), url(../images/gallery/icebackground-mobіle.png), linear-gradient(var(--bg-color-top), var(--bg-color-top));
+//   background-position: top 0px center, top 50px center, top 1070px center;
+//   background-repeat: no-repeat;
+//   background-size: 1200px 50px, 1200px 1020px, 1200px 50px;
+// }
