@@ -21,7 +21,7 @@
       </ul>
     </nav>
     <div class="header__btn-group">
-      <button type="button" class="header-menu">
+      <button type="button" class="header-menu js-open-menu">
         <svg class="header__btn-burger">
           <use href="./images/icons.svg#icon-burger"></use>
         </svg>
@@ -36,3 +36,47 @@
     </div>
   </div>
 </header>
+
+<!-- mobile menu -->
+<div class="mobile-menu is-open js-menu-container">
+  <div class="mobile-menu__container">
+    <div class="mobile-menu__block">
+      <a href="#" class="mobile-menu__logo link">
+        <img class="menu-logo" src="./images/logo.png" alt="ice cream" />
+      </a>
+
+      <button class="mobile-menu__close-button js-close-menu">
+        <svg class="mobile-menu__close-icon">
+          <use href="./images/icons.svg#icon__close"></use>
+        </svg>
+      </button>
+    </div>
+    <!-- navigation menu-mobile -->
+    <ul class="site-nav__menu list">
+      <li class="site-nav__item">
+        <a href="#" class="navigation__link-mobile link">Home</a>
+      </li>
+      <li class="site-nav__item">
+        <a href="#" class="navigation__link-mobile link">How it’s made?</a>
+      </li>
+      <li class="site-nav__item">
+        <a href="#" class="navigation__link-mobile link">Our products</a>
+      </li>
+      <li class="site-nav__item">
+        <a href="#" class="navigation__link-mobile link">Contact</a>
+      </li>
+    </ul>
+
+    <!-- button modal mobile-->
+    <button
+      data-modal-open
+      type="button"
+      class="menu__buy-now-button button button_accent"
+    >
+      Buy now
+      <svg class="button__arrow">
+        <use href="./images/icons.svg#icon__btn"></use>
+      </svg>
+    </button>
+  </div>
+</div>
