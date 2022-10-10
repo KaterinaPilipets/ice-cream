@@ -13,11 +13,11 @@
     border-radius: 10px;
 
     @include mobile {
-        width: 280px;
+        max-width: 280px;
     }
 
     @include tablet {
-        width: 568px;
+        max-width: 568px;
 
     }
 
