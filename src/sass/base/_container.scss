@@ -5,6 +5,7 @@
     margin-left: auto;
     margin-right: auto;
     background-color: var(--bg-color-top);
+    z-index: -1;
 
     @include tablet {
         max-width: 768px;
