@@ -26,15 +26,18 @@
 
 .modal-products__toptitle::after {
   content: '';
-  display: block;
-  height: 138px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 130px;
+  height: 140px;
   margin-top: 22px;
   background-image: url(/src/images/modal/modal-products.png),
     linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7));
-  background-size: 131px 131px;
-  border-radius: 50px;
+  // background-size: 131px 131px;
+  border-radius: 50%;
   background-repeat: no-repeat;
-  background-position: top, bottom;
+  // background-position: top center, bottom center;
   box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
 }
 
@@ -49,11 +52,13 @@
 .modal-products__topitem {
   border: 2px solid #9cbe8f;
   border-radius: 40px;
+  width: 53px;
+  height: 72px;
 }
 
 .modal-products__toptext {
   margin-bottom: 16px;
-  width: 43px;
+  // width: 53px;
   height: 43px;
   font-family: 'Montserrat';
   font-style: normal;
