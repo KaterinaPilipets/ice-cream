@@ -1,59 +1,9 @@
 <section class="gallery">
   <div class="container autoplay">
     <h2 class="visually-hidden">Gallery</h2>
-    <div>
+
+    <div class="gallery__picture">
       <picture>
-        <!-- <source
-          srcset="
-            ./images/gallery/gallery01-desktop.webp    1x,
-            ./images/gallery/gallery01-desktop@2x.webp 2x
-          "
-          media="(min-width: 1200px)"
-          type="image/webp"
-        />
-        <source
-          srcset="
-            ./images/gallery/gallery01-desktop.jpg    1x,
-            ./images/gallery/gallery01-desktop@2x.jpg 2x
-          "
-          media="(min-width: 1200px)"
-        />
-        <source
-          srcset="
-            ./images/gallery/gallery01-tablet.webp    1x,
-            ./images/gallery/gallery01-tablet@2x.webp 2x
-          "
-          media="(min-width: 768px)"
-          type="image/webp"
-        />
-        <source
-          srcset="
-            ./images/gallery/gallery01-tablet.jpg    1x,
-            ./images/gallery/gallery01-tablet@2x.jpg 2x
-          "
-          media="(min-width: 768px)"
-        />
-        <source
-          srcset="
-            ./images/gallery/gallery01-mobile.webp    1x,
-            ./images/gallery/gallery01-mobile@2x.webp 2x
-          "
-          media="(max-width: 767px)"
-          type="image/webp"
-        />
-        <source
-          srcset="
-            ./images/gallery/gallery01-mobile.jpg    1x,
-            ./images/gallery/gallery01-mobile@2x.jpg 2x
-          "
-          media="(max-width: 767px)"
-        />
-        <img
-          src="./images/gallery/gallery01-mobile.jpg"
-          alt="ice-cream"
-          class="gallery__img"
-        /> -->
-        <!-- десктоп -->
         <source
           srcset="
             ./images/gallery/desktop/gallery1@1x-min.webp 1x,
@@ -71,39 +21,6 @@
         />
         <source
           srcset="
-            ./images/gallery/desktop/gallery2@1x-min.webp,
-            ./images/gallery/desktop/gallery2@2x-min.webp
-          "
-          media="(min-width: 1200px)"
-          type="image/webp"
-        />
-        <source
-          srcset="
-            ./images/gallery/desktop/gallery2@1x-min.jpg 1x,
-            ./images/gallery/desktop/gallery2@2x-min.jpg 2x
-          "
-          media="(min-width: 1200px)"
-        />
-        <source
-          srcset="
-            ./images/gallery/desktop/gallery3@1x-min.webp 1x,
-            ./images/gallery/desktop/gallery3@2x-min.webp 2x
-          "
-          media="(min-width: 1200px)"
-          type="image/webp"
-        />
-        <source
-          srcset="
-            ./images/gallery/desktop/gallery3@1x-min.jpg 1x,
-            ./images/gallery/desktop/gallery3@2x-min.jpg 2x
-          "
-          media="(min-width: 1200px)"
-        />
-        <!-- десктоп -->
-
-        <!-- таблетка -->
-        <source
-          srcset="
             ./images/gallery/tablet/gallery1@1x-min.webp 1x,
             ./images/gallery/tablet/gallery1@2x-min.webp 2x
           "
@@ -116,6 +33,46 @@
             ./images/gallery/tablet/gallery1@2x-min.jpg 2x
           "
           media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./images/gallery/mobile/gallery1@1x-min.webp 1x,
+            ./images/gallery/mobile/gallery1@2x-min.webp 2x
+          "
+          media="(max-width: 767px)"
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./images/gallery/mobile/gallery1@1x-min.jpg 1x,
+            ./images/gallery/mobile/gallery1@2x-min.jpg 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <img
+          src="./images/gallery/mobile/gallery1@1x-min.jpg"
+          alt="ice-cream"
+          class="gallery__img"
+        />
+      </picture>
+    </div>
+
+    <div>
+      <picture>
+        <source
+          srcset="
+            ./images/gallery/desktop/gallery2@1x-min.webp,
+            ./images/gallery/desktop/gallery2@2x-min.webp
+          "
+          media="(min-width: 1200px)"
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./images/gallery/desktop/gallery2@1x-min.jpg 1x,
+            ./images/gallery/desktop/gallery2@2x-min.jpg 2x
+          "
+          media="(min-width: 1200px)"
         />
         <source
           srcset="
@@ -134,39 +91,6 @@
         />
         <source
           srcset="
-            ./images/gallery/tablet/gallery3@1x-min.webp 1x,
-            ./images/gallery/tablet/gallery3@2x-min.webp 2x
-          "
-          media="(min-width: 768px)"
-          type="image/webp"
-        />
-        <source
-          srcset="
-            ./images/gallery/tablet/gallery3@1x-min.jpg 1x,
-            ./images/gallery/tablet/gallery3@2x-min.jpg 2x
-          "
-          media="(min-width: 768px)"
-        />
-        <!-- таблетка -->
-
-        <!-- мобілка -->
-        <source
-          srcset="
-            ./images/gallery/mobile/gallery1@1x-min.webp 1x,
-            ./images/gallery/mobile/gallery1@2x-min.webp 2x
-          "
-          media="(max-width: 767px)"
-          type="image/webp"
-        />
-        <source
-          srcset="
-            ./images/gallery/mobile/gallery1@1x-min.jpg 1x,
-            ./images/gallery/mobile/gallery1@2x-min.jpg 2x
-          "
-          media="(max-width: 767px)"
-        />
-        <source
-          srcset="
             ./images/gallery/mobile/gallery2@1x-min.webp 1x,
             ./images/gallery/mobile/gallery2@2x-min.webp 2x
           "
@@ -179,6 +103,46 @@
             ./images/gallery/mobile/gallery2@2x-min.jpg 2x
           "
           media="(max-width: 767px)"
+        />
+        <img
+          src="./images/gallery/mobile/gallery2@1x-min.jpg"
+          alt="ice-cream"
+          class="gallery__img"
+        />
+      </picture>
+    </div>
+
+    <div>
+      <picture>
+        <source
+          srcset="
+            ./images/gallery/desktop/gallery3@1x-min.webp 1x,
+            ./images/gallery/desktop/gallery3@2x-min.webp 2x
+          "
+          media="(min-width: 1200px)"
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./images/gallery/desktop/gallery3@1x-min.jpg 1x,
+            ./images/gallery/desktop/gallery3@2x-min.jpg 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            ./images/gallery/tablet/gallery3@1x-min.webp 1x,
+            ./images/gallery/tablet/gallery3@2x-min.webp 2x
+          "
+          media="(min-width: 768px)"
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./images/gallery/tablet/gallery3@1x-min.jpg 1x,
+            ./images/gallery/tablet/gallery3@2x-min.jpg 2x
+          "
+          media="(min-width: 768px)"
         />
         <source
           srcset="
@@ -195,68 +159,12 @@
           "
           media="(max-width: 767px)"
         />
-        <!-- мобілка -->
         <img
-          src="./images/gallery/mobile/gallery1@1x-min.jpg"
+          src="./images/gallery/mobile/gallery3@1x-min.jpg"
           alt="ice-cream"
           class="gallery__img"
         />
       </picture>
-      <!-- </picture>
-    </div>
-    <div>
-      <picture>
-        <source
-          srcset="
-            ./images/gallery/gallery01-desktop.webp    1x,
-            ./images/gallery/gallery01-desktop@2x.webp 2x
-          "
-          media="(min-width: 1200px)"
-          type="image/webp"
-        />
-        <source
-          srcset="
-            ./images/gallery/gallery01-desktop.jpg    1x,
-            ./images/gallery/gallery01-desktop@2x.jpg 2x
-          "
-          media="(min-width: 1200px)"
-        />
-        <source
-          srcset="
-            ./images/gallery/gallery01-tablet.webp    1x,
-            ./images/gallery/gallery01-tablet@2x.webp 2x
-          "
-          media="(min-width: 768px)"
-          type="image/webp"
-        />
-        <source
-          srcset="
-            ./images/gallery/gallery01-tablet.jpg    1x,
-            ./images/gallery/gallery01-tablet@2x.jpg 2x
-          "
-          media="(min-width: 768px)"
-        />
-        <source
-          srcset="
-            ./images/gallery/gallery01-mobile.webp    1x,
-            ./images/gallery/gallery01-mobile@2x.webp 2x
-          "
-          media="(max-width: 767px)"
-          type="image/webp"
-        />
-        <source
-          srcset="
-            ./images/gallery/gallery01-mobile.jpg    1x,
-            ./images/gallery/gallery01-mobile@2x.jpg 2x
-          "
-          media="(max-width: 767px)"
-        />
-        <img
-          src="./images/gallery/gallery01-mobile.jpg"
-          alt="ice-cream"
-          class="gallery__img"
-        />
-      </picture> -->
     </div>
   </div>
 </section>
