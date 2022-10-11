@@ -1,12 +1,143 @@
 .modal-products {
-    @include tablet {
-
-        height: 995px;
-    }
+  padding: 28px 20px 32px 20px;
+  @include tablet {
+    height: 995px;
+  }
 }
 
 .modal-products__toptitle {
-    font-size: 20px;
-    line-height: 1.4;
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: center;
+}
 
+.modal-products__title {
+  margin-top: 39px;
+  margin-bottom: 24px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-products__toptitle::after {
+  content: '';
+  display: block;
+  height: 138px;
+  margin-top: 22px;
+  background-image: url(/src/images/modal/modal-products.png),
+    linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7));
+  background-size: 131px 131px;
+  border-radius: 50px;
+  background-repeat: no-repeat;
+  background-position: top, bottom;
+  box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+}
+
+.modal-products__toplist {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  gap: 9px;
+  text-align: center;
+}
+
+.modal-products__topitem {
+  border: 2px solid #9cbe8f;
+  border-radius: 40px;
+}
+
+.modal-products__toptext {
+  margin-bottom: 16px;
+  width: 43px;
+  height: 43px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 2.8;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #131313;
+  background: #9cbe8f;
+  border: 2px solid #9cbe8f;
+  border-radius: 50%;
+  box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+}
+
+.modal-products__buttext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 13px;
+  height: 12px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
+  text-align: center;
+  color: #131313;
+}
+
+.modal-products__list {
+  gap: 11px;
+  margin-bottom: 48px;
+}
+
+.modal-products__itemingr {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.modal-products__pointingr {
+  // margin-right: auto;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.76;
+  letter-spacing: 0.04em;
+
+  color: #131313;
+}
+
+.left {
+  margin-right: auto;
+}
+
+.modal-products__form-input {
+  width: 100%;
+  height: 42px;
+  margin-bottom: 16px;
+  padding-left: 11px;
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
+  border-radius: 10px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #131313;
+  // &:focus {
+  //     outline-color: #2196F3;
+  // }
+}
+
+.modal-comment {
+  height: 84px;
+  margin-bottom: 32px;
+  padding-left: 11px;
+  padding-top: 11px;
+}
+
+.position {
+  display: block;
+  margin: 0 auto;
 }
