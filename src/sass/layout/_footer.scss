@@ -1,0 +1,106 @@
+.page-footer {
+  background-color: var(--bg-color-top);
+}
+
+.page-footer__text-container {
+  width: 234px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.page-footer__title {
+  //   font-weight: 700;
+  font-size: 18px;
+  line-height: 1.22;
+  //   text-transform: uppercase;
+  padding-bottom: 16px;
+}
+
+.page-footer__text {
+  //   font-weight: 700;
+  font-size: 34px;
+  line-height: 1.21;
+  letter-spacing: 0.04em;
+  //   text-transform: uppercase;
+  padding-bottom: 42px;
+}
+
+.page-footer__social-network-list {
+  display: flex;
+  justify-content: flex-end;
+  gap: 27px;
+  margin-bottom: 38px;
+}
+
+.page-footer__social-network-item {
+  border-radius: 50%;
+  background-color: var(--color-accent);
+}
+
+.page-footer__social-netwok-icon_github-size {
+  width: 19px;
+  height: 19px;
+
+  //   outline: 1px solid black;
+}
+
+.page-footer__social-netwok-icon_telegram-size {
+  width: 19px;
+  height: 15px;
+}
+
+.page-footer__social-netwok-icon_facebook-size {
+  width: 9px;
+  height: 19px;
+}
+
+.page-footer__social-netwok-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 32px;
+  height: 32px;
+}
+
+.page-footer__social-netwok-icon {
+  fill: var(--bg-color-top);
+}
+
+.page-footer__phone-text {
+  text-align: end;
+
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.86;
+  color: var(--text-color_dark);
+}
+
+.page-footer__phone-link {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.86;
+  color: var(--bg-color-modal);
+}
+
+.page-footer__copyright-container {
+  background-color: var(--bg-color-top);
+  padding: 16px 20px 62px;
+  text-align: center;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.52;
+  color: #7a7a7a;
+
+  border-top: 1px solid #e1e1e1;
+}
+
+.page-footer__container {
+  margin-bottom: 40px;
+}
+
+.page-footer__copyright-about {
+  display: block;
+}
