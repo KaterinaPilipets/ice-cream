@@ -1,12 +1,12 @@
 <div class="backdrop is-hidden" data-modal-location>
-  <!-- <div class="modal modal-location"> -->
-   <button type="button button-location" class="modal__close" data-modal-close>
+  <div class="modal modal-location">
+   <button type="button" class="modal__close location-modal-close" data-modal-close>
        <svg class="modal-close-icon" width="20" height="20">
          <use href="./images/icons.svg#icon__close-big"></use>
        </svg>
    </button>
      <p class="modal-location__title section__modal-title">Our Locations</p>
-     <picture>
+     <picture class="picture-location">
        <source
          srcset="
            ./images/modal/map-desktop.webp    1x,
@@ -46,9 +46,8 @@
      </picture>
 
      <form action="https://goo.gl/maps/oBUhqxkDfbNSAMwU6">
-       <button class="button button_accent" type="Open map">Open map</button>
+       <button class="button button_accent modal-location__btn" type="Open map">Open map</button>
      </form>
   </div>
 </div>
 
-<!-- <script src="./js/modal-location.js"></script> -->
