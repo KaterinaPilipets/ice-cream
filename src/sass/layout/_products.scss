@@ -42,24 +42,34 @@
     color: var(--text-color_dark);
 
     margin-bottom: 148px;
+    @include tablet {
+        margin-bottom: 200px;
+    }
 }
 
 .product-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    // align-items: center;
-    // flex-direction: column;
+    align-items: center;
     padding: 0;
     margin: 0;
     min-width: 280px;
     height: 100%;
+    @include tablet {
+        flex-wrap: nowrap;
+        gap: 15px;
+        align-items: normal;
+    }
 }
 
 .product-cards__item {
     position: relative;
     height: 420px;
     margin-bottom: 164px;
+    @include tablet {
+        width: 224px;
+    }
 }
 
 .product-cards__item:last-child {
