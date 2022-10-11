@@ -9,18 +9,20 @@
 
     .reviews__item {
         width: 100%;
+        margin-bottom: 48px;
        
     }
 .reviews__text {
-padding: 34px 36px;
-margin-bottom: 30px;
+        height: 256px;
+        padding: 34px 36px;
+        margin-bottom: 30px;
         background-color: var(--bg-color-top);
         color: #FCFCFC;
 
         font-weight: 400;
         line-height: 2.55;
         text-align: center;
-    letter-spacing: 0.04em;
+        letter-spacing: 0.04em;
         border-radius: 10px;
         border: 1px solid black;
 
@@ -28,14 +30,16 @@ margin-bottom: 30px;
 
     .reviews__subject {
         max-width: 177px;
+        height: 74px;
         margin: 0 auto;
+        color: #131313;
 
         font-weight: 500;
         font-size: 20px;
         line-height: 1.86;
         letter-spacing: 0.04em;
         text-align: center;
-        color: #131313;
+       
     }
 }
 
@@ -45,5 +49,16 @@ margin-bottom: 30px;
     }
 }
 @include tablet {
+    .reviews__photo {
+        margin-bottom: 28px;
+    }
+        .reviews__item {
+            margin-bottom: 80px;
+    
+        }
+    .reviews__text {
+        height: 100%;
+        margin-bottom: 32px;
+    }
 
 }
