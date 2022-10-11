@@ -1,29 +1,29 @@
 <section class="contacts">
    <div class="container">
-  <h2>contacts</h2>
+  <h2 class="visually-hidden" >contacts</h2>
 
   <ul class="contacts__list">
     <li class="contacts__item">
       <p class="contacts__name">CAFE</p>
       <p class="contacts__location">Chicago</p>
       <address>
-        <a class="contacts__link" href="">10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA</a>
+        <a class="contacts__link link" href="">10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA</a>
       </address>
 
       <ul class="schedule">
         <li class="schedule__item">
-          <p>Monday - Friday</p>
-          <p>06:00 AM - 10:00 PM</p>
+          <p class="schedule__day">Monday - Friday</p>
+          <p class="schedule__time">06:00 AM - 10:00 PM</p>
         </li>
         <li class="schedule__item">
-          <p>Saturday - Sunday</p>
-          <p>08:00 AM - 16:00 PM</p>
+          <p class="schedule__day">Saturday - Sunday</p>
+          <p class="schedule__time">08:00 AM - 16:00 PM</p>
         </li>
       </ul>
 
       <ul class="contacts-inform">
-        <li  class="contacts-inform__item"><a href="tel:+61(0)383766284">+61(0) 383 766 284</a></li>
-        <li  class="contacts-inform__item"><a href="mailto:noreply@envato.com">noreply@envato.com</a></li>
+        <li  class="contacts-inform__item"><a class="link" href="tel:+61(0)383766284">+61(0) 383 766 284</a></li>
+        <li  class="contacts-inform__item"><a  class="link" href="mailto:noreply@envato.com">noreply@envato.com</a></li>
       </ul>
     </li>
 
@@ -31,22 +31,22 @@
       <p  class="contacts__name">FOOD TRUCK</p>
       <p  class="contacts__location">Los Angeles </p>
       <address>
-        <a class="contacts__link" href="">1003 Manhattan Ave, Manhattan Beach, CA 90263, USA</a>
+        <a class="contacts__link link" href="">1003 Manhattan Ave, Manhattan Beach, CA 90263, USA</a>
       </address>
 
       <ul class="schedule">
         <li class="schedule__item">
-          <p>Monday - Friday</p>
-          <p>06:00 AM - 10:00 PM</p>
+          <p class="schedule__day">Monday - Friday</p>
+          <p class="schedule__time">06:00 AM - 10:00 PM</p>
         </li>
         <li class="schedule__item">
-          <p>Saturday - Sunday</p>
-          <p>08:00 AM - 16:00 PM</p>
+          <p class="schedule__day">Saturday - Sunday</p>
+          <p class="schedule__time">08:00 AM - 16:00 PM</p>
         </li>
-      </ul class="contacts-inform">
-      <ul class="class">
-        <li  class="contacts-inform__item"><a href="tel:+61(0)383766284">+61(0) 383 766 284</a></li>
-        <li  class="contacts-inform__item"><a href="mailto:noreply@envato.com">noreply@envato.com</a></li>
+      </ul>
+      <ul class="contacts-inform">
+        <li  class="contacts-inform__item"><a class="link" href="tel:+61(0)383766284">+61(0) 383 766 284</a></li>
+        <li  class="contacts-inform__item"><a class="link" href="mailto:noreply@envato.com">noreply@envato.com</a></li>
       </ul>
     </li>
 
@@ -55,29 +55,37 @@
       <p  class="contacts__location">New York</p>
 
       <address>
-        <a class="contacts__link" href="">726 Sterling Pl, Brooklyn, NY 11222, USA</a>
+        <a class="contacts__link link" href="">726 Sterling Pl, Brooklyn, NY 11222, USA</a>
       </address>
 
       <ul class="schedule">
         <li class="schedule__item">
-          <p>Monday - Friday</p>
-          <p>06:00 AM - 10:00 PM</p>
+          <p class="schedule__day">Monday - Friday</p>
+          <p class="schedule__time">06:00 AM - 10:00 PM</p>
         </li>
         <li class="schedule__item">
-          <p>Saturday - Sunday</p>
-          <p>08:00 AM - 16:00 PM</p>
+          <p class="schedule__day">Saturday - Sunday</p>
+          <p class="schedule__time">08:00 AM - 16:00 PM</p>
         </li>
       </ul>
 
       <ul class="contacts-inform">
-        <li  class="contacts-inform__item"><a href="tel:+61(0)383766284">+61(0) 383 766 284</a></li>
-        <li  class="contacts-inform__item"><a href="mailto:noreply@envato.com">noreply@envato.com</a></li>
+        <li  class="contacts-inform__item"><a class="link" href="tel:+61(0)383766284">+61(0) 383 766 284</a></li>
+        <li  class="contacts-inform__item"><a class="link" href="mailto:noreply@envato.com">noreply@envato.com</a></li>
       </ul>
     </li>
   </ul>
-  <div class="">
-    <button type="button">Our locations</button>
-    <button type="button">Franchise</button>
+  <div class="contacts__buttons">
+    <button class="button_accent button" type="button">Our locations
+       <svg class="button__arrow">
+          <use href="./images/icons.svg#icon__btn"></use>
+        </svg>
+    </button>
+    <button class="button_border button contacts__btn" type="button">Franchise
+       <svg class="button__arrow">
+          <use href="./images/icons.svg#icon__btn"></use>
+        </svg>
+    </button>
   </div>
    </div>
 </section> 
