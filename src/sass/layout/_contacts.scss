@@ -1,26 +1,44 @@
+.contacts {
+padding-top: 74px;
+padding-bottom: 39px;
+
+
+@include tablet {
+  padding-top: 124px;
+  padding-bottom: 40px;    
+  }
+  @include desktop {
+    padding-top: 144px;
+      padding-bottom: 120px;
+      
+  }
+}
+
+
+
 .contacts__list {
     display: flex;
     flex-direction: column;
     gap: 20px;
   width: 100%;
   align-items: center;
-  padding-top: 74px;
+ 
     color: var(--text-color_dark);
     font-weight: 500;
 
   @include tablet {
     flex-direction: row;
-    gap: 32px;}
+    gap: 16px;
+  // width: 528px;
+}
 
-    @include desktop {
-        flex-direction: row;
-        gap: 32px;
-        height: 528px;
+@include desktop {
+gap: 32px;
+}
+  
 
     }
  
-}
-
 .contacts__item {
   width: 100%;
   max-width: 280px;
@@ -29,45 +47,63 @@
   background-color: var(--bg-color-modal);
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   padding: 40px 32px;
+  font-size: 12px;
 
   @include tablet {
-    max-width: calc((100% - 64px) / 3);
+    max-width: calc((100% - 32px) / 3);
+    padding: 40px 24px;
+      font-size: 14px;
+  }
+
+  @include desktop {
+    padding: 40px 40px;
+      font-size: 16px;
+     max-width: calc((100% - 64px) / 3);
   }
 }
 
 .contacts__name {
-  text-align: center;
-  border: 1px solid #e1e1e1;
+ 
+  // border: 1px solid #e1e1e1;
   border-radius: 4px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  padding-left: 20px;
-  padding-right: 20px;
-  // padding: 0 20px;
+  padding-left: 22px;
+  padding-right: 21px;
   width: fit-content;
-
-  
-  font-size: 12px;
-  line-height: 1.86;
-  letter-spacing: 0.04em;
+  // height: 16px;
+  text-align: center;
+  font-weight: 500;
+  // font-size: 12px;
+  // зменшила line-height до 1.33 замість 1.86 по макету, щоб розмір візуально як на макеті
+  line-height: 1.33;
+   letter-spacing: 0.04em;
 //   color: var(--text-color_dark);
-  background-color: #f8d24e;
+  background-color:var(--color-accent);
   margin-bottom: 20px;
 }
 
 .contacts__location {
   font-weight: 500;
-  font-size: 12px;
+  // font-size: 12px;
   line-height: 1.86;
 //   color: var(--text-color_dark);
   margin-bottom: 8px;
 }
 
 .contacts__link {
-    display: block;
+   display: block;
   max-width: 190px;
   color: var(--text-color_address);
   line-height: 1.83;
  padding-bottom: 24px;
+font-style: normal;
+
+@include tablet {
+  max-width: 159px;
+}
+@include desktop {
+  max-width: 100%;
+}
 }
 
 .schedule {
@@ -97,22 +133,23 @@ line-height: 1.83;
     flex-direction: column;
     align-items: center;
     gap: 16px;
-    padding-top: 32px;
-font-weight: 600;
-    font-size: 14px;
-    line-height: 1.29;
+    margin-top: 32px;
 
     @include tablet {
 flex-direction: row;
 align-items: center;
 justify-content: center;
+margin-top: 60px;
+    }
+    @include desktop {
+      margin-top: 64px;
     }
   
 }
 
-.button_border {
-background-color: var(--bg-color-top);
-}
+// .button_border {
+// background-color: var(--bg-color-top);
+// }
 .contacts__btn {
    padding-left: 46px;
    padding-right: 46px;
