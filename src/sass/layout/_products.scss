@@ -1,6 +1,11 @@
+// .products {
+//     max-width: 1600px;
+// }
 .products--photo {
-    margin: 0;
 
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1600px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -39,6 +44,7 @@
 // .container {}
 
 .container--view {
+    max-width: 1600px;
     padding-top: 60px;
     background-color: transparent;
 
@@ -229,14 +235,15 @@
     transform: translateX(-50%);
     content: '';
     display: inline-block;
-    background-position: center;
-    background-repeat: no-repeat;
+    // background-position: center;
+    // background-repeat: no-repeat;
     position: absolute;
     background-position-y: -13px;
     border-radius: 100px;
     @include desktop {
         border-radius: 150px;
         background-position-y: -17px;
+        top: -30%;
     }
 }
 .product-cards__item--color-icecream::before {
