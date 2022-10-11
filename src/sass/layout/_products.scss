@@ -56,6 +56,9 @@
     margin: 0;
     min-width: 280px;
     height: 100%;
+
+    position: relative;
+
     @include tablet {
         flex-wrap: nowrap;
         gap: 15px;
@@ -67,13 +70,17 @@
     position: relative;
     height: 420px;
     margin-bottom: 164px;
+
+    position: relative;
+
     @include tablet {
         width: 224px;
+        margin-bottom: 80px;
     }
 }
 
 .product-cards__item:last-child {
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 }
 
 .product-cards__item--color-icecream {
@@ -95,8 +102,11 @@
 .section__title {
     color: var(--text-color_dark);
 
-    margin-top: 123px;
+    padding-top: 123px;
     margin-bottom: 40px;
+    @include tablet {
+        padding-top: 108px;
+    }
 }
 
 .product-cards__text {
@@ -110,21 +120,28 @@
 
     color: var(--text-color_dark);
 
-    margin-bottom: 90px;
     padding-right: 40px;
     padding-left: 40px;
+    @include tablet {
+        padding-left: 26px;
+        padding-right: 26px;
+    }
 }
 
 .product-cards__button {
     display: block;
     margin: 0 auto;
-    margin-bottom: 20px;
-
+    bottom: 0;
+    right: 30%;
+    transform: translateX(-50%);
     background-color: transparent;
     border: transparent;
-    // width: 40px;
-    // height: 20px;
-
+    position: absolute;
+    margin-bottom: 20px;
+    @include tablet {
+        right: 25%;
+    }
+    
 }
 
 .product-cards__icon {
