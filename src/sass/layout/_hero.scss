@@ -1,0 +1,103 @@
+.hero {
+    // background-image: url(../images/hero/hero2-mobile.png);
+    // background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--bg-color-top);
+    margin-left: auto;
+    margin-right: auto;
+    // object-fit: cover;
+    max-width: 320px;
+    //     height: 502px;
+    // height: 100%;
+    // width: 100%;
+    background-image: url(../images/hero/hero1-mobile.png),
+        url(../images/hero/hero2-mobile.png);
+    background-size: 170px, 320px;
+    // float: left;
+    background-position: bottom -33px right 68px, bottom 0px right 0px;
+    
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    .hero {
+        background-image: url(../images/hero/hero1-mobile@2x.png), url(../images/hero/hero2-mobile@2x.png);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .hero {
+        background-image: url(../images/hero/hero1-tablet.png), url(../images/hero/hero2-tablet.png), url(../images/hero/hero3-tablet.png);
+        max-width: 768px;
+        background-size: 270px, 768px, 152px,;
+        background-position: right 80px bottom -40px, right 0px bottom 0px, left 30px bottom 10px;
+        height: 415px;
+    }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+screen and (min-resolution: 192dpi) and (min-width: 768px),
+screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    .hero {
+        background-image: url(../images/hero/hero1-tablet@2x.png), url(../images/hero/hero2-tablet@2x.png), url(../images/hero/hero3-tablet.png);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .hero {
+        background-image: url(../images/hero/hero1-desctop.png), url(../images/hero/hero2-desctop.png), url(../images/hero/hero3-desctop.png);
+        max-width: 1200px;
+        background-size: 484px, 1200px, 225px;
+        background-position: right 90px bottom -80px, right 0 bottom 0, left 10px bottom 60px;
+        height: 664px;
+    }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+screen and (min-resolution: 192dpi) and (min-width: 1200px),
+screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+    .hero {
+        background-image: url(../images/hero/hero1-desctop@2x.png), url(../images/hero/hero2-desctop@2x.png), url(../images/hero/hero3-desctop@2x.png);
+    }
+}
+
+.hero__title {
+    font-family: var(--font-title);
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.27;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    // color: var(--bg-color-modal);
+}
+
+.hero__link {
+    font-family: var(--font-top);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration-line: underline;
+    color: var(--color-accent);
+
+    &:hover {
+        color: var(--color-hover);
+    }
+
+    &:focus {
+        line-height: 1.25;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: var(--text-color_light);
+        border: 2px solid var(--color-hover);
+        border-radius: 8px;
+        width: 64px;
+        height: 24px;
+    }
+}

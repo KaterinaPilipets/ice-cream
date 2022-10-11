@@ -1,42 +1,97 @@
 <header class="page-header">
-  <div class="container">
-    <div class="page-header__content">
-      <a href="/" class="page-header__logo link">
-        <img src="./images/logo.png" alt="ice cream" />
-      </a>
-      <!-- Navigation -->
-      <nav class="navigation">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a href="#" class="navigation_active link">Home</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#" class="link">How it’s made?</a>
-          </li>
-          <li class="navigation__item">
-            <a href="" class="link">Our products</a>
-          </li>
-          <li class="navigation__item">
-            <a href="" class="link">Contact</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="header__btn-group">
-        <button type="button" class="header-menu">
-          <svg class="header__btn-burger">
-            <use href="./images/icons.svg#icon-burger"></use>
-          </svg>
-        </button>
+  <div class="container page-header__content">
+    <a href="/" class="page-header__logo-link link">
+      <img class="page-header__logo" src="./images/logo.png" alt="ice cream" />
+    </a>
+    <!-- Navigation -->
+    <nav class="navigation">
+      <ul class="navigation__list">
+        <li>
+          <a href="#" class="navigation__link link">Home</a>
+        </li>
+        <li>
+          <a href="#about" class="navigation__link link">How it’s made?</a>
+        </li>
+        <li>
+          <a href="#products" class="navigation__link link">Our products</a>
+        </li>
+        <li>
+          <a href="#contacts" class="navigation__link link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header__btn-group">
+      <button type="button" class="header-menu js-open-menu">
+        <svg class="header__btn-burger">
+          <use href="./images/icons.svg#icon-burger"></use>
+        </svg>
+      </button>
 
-        <button type="button" class="button button_accent">
-          Buy now
-          <!-- TODO: use icon from sprite -->
-          <!-- button buy now svg -->
-          <svg class="">
-            <use href="./images/icons.svg#icon__btn"></use>
-          </svg>
-        </button>
-      </div>
+      <button type="button" class="buy-now__button button button_accent">
+        Buy now
+        <svg class="button__arrow">
+          <use href="./images/icons.svg#icon__btn"></use>
+        </svg>
+      </button>
     </div>
   </div>
 </header>
+
+<!-- mobile menu -->
+<div class="mobile-menu is-open js-menu-container">
+  <div class="mobile-menu__container">
+    <div class="mobile-menu__block">
+      <a href="#" class="mobile-menu__logo link">
+        <img class="menu-logo" src="./images/logo.png" alt="ice cream" />
+      </a>
+
+      <button class="mobile-menu__close-button js-close-menu">
+        <svg class="mobile-menu__close-icon">
+          <use href="./images/icons.svg#icon__close"></use>
+        </svg>
+      </button>
+    </div>
+    <!-- navigation menu-mobile -->
+    <ul class="site-nav__menu list">
+      <li class="site-nav__item">
+        <a href="#" class="navigation__link-mobile link js-menu-navigation-link"
+          >Home</a
+        >
+      </li>
+      <li class="site-nav__item">
+        <a
+          href="#about"
+          class="navigation__link-mobile link js-menu-navigation-link"
+          >How it’s made?</a
+        >
+      </li>
+      <li class="site-nav__item">
+        <a
+          href="#products"
+          class="navigation__link-mobile link js-menu-navigation-link"
+          >Our products</a
+        >
+      </li>
+      <li class="site-nav__item">
+        <a
+          href="#contacts"
+          class="navigation__link-mobile link js-menu-navigation-link"
+          >Contact</a
+        >
+      </li>
+    </ul>
+
+    <!-- button modal mobile-->
+    <button
+      data-modal-open
+      type="button"
+      class="menu__buy-now-button button button_accent"
+      hero-modal-open
+    >
+      Buy now
+      <svg class="button__arrow">
+        <use href="./images/icons.svg#icon__btn"></use>
+      </svg>
+    </button>
+  </div>
+</div>
