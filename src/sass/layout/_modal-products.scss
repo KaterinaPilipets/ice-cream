@@ -1,5 +1,6 @@
 .modal-products {
   padding: 28px 20px 32px 20px;
+
   @include tablet {
     height: 995px;
   }
@@ -50,7 +51,7 @@
 }
 
 .modal-products__topitem {
-  border: 2px solid #9cbe8f;
+  border: 2px solid #9CBE8F;
   border-radius: 40px;
   width: 53px;
   height: 72px;
@@ -70,8 +71,8 @@
   justify-content: center;
   align-items: center;
   color: #131313;
-  background: #9cbe8f;
-  border: 2px solid #9cbe8f;
+  background: #9CBE8F;
+  border: 2px solid #9CBE8F;
   border-radius: 50%;
   box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
 }
@@ -101,6 +102,7 @@
   justify-content: center;
   text-align: center;
 }
+
 .modal-products__pointingr {
   // margin-right: auto;
   font-family: 'Montserrat';
@@ -108,7 +110,6 @@
   font-size: 14px;
   line-height: 1.76;
   letter-spacing: 0.04em;
-
   color: #131313;
 }
 
@@ -122,7 +123,7 @@
   margin-bottom: 16px;
   padding-left: 11px;
   background: rgba(248, 210, 78, 0.1);
-  border: 1px solid #84a178;
+  border: 1px solid #84A178;
   border-radius: 10px;
   font-family: 'Montserrat';
   font-style: normal;
