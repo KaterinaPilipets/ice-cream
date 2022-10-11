@@ -1,57 +1,59 @@
-<!-- <div class="backdrop is-hidden" data-modal> -->
+
 <div class="backdrop is-hidden" data-modal>
+<!-- <div class="backdrop" data-modal> -->
+
   <div class="modal modal-products">
     <button type="button" class="modal__close" data-modal-close>
-      <svg class="modal__close-btn" width="20" height="20">
+            <svg class="modal__close-btn" width="20" height="20">
         <use href="./images/icons.svg#icon__close-big"></use>
       </svg>
     </button>
-    <p class="modal-products__toptitle section__modal-title">
+    <p class="modal-products__toptitle section__modal-title first">
       Chololate icecream
     </p>
     <ul class="modal-products__toplist">
       <li class="modal-products__topitem">
-        <p>320</p>
-        <p>kcal</p>
+        <p class="modal-products__toptext">320</p>
+        <p class="modal-products__buttext">kcal</p>
       </li>
       <li class="modal-products__topitem">
-        <p>4g</p>
-        <p>Protein...</p>
+        <p class="modal-products__toptext">4g</p>
+        <p class="modal-products__buttext">Prote...</p>
       </li>
       <li class="modal-products__topitem">
-        <p>320</p>
-        <p>kcal</p>
+        <p class="modal-products__toptext">8,2g</p>
+        <p class="modal-products__buttext">Fats</p>
       </li>
       <li class="modal-products__topitem">
-        <p>320</p>
-        <p>kcal</p>
+        <p class="modal-products__toptext">40,4g</p>
+        <p class="modal-products__buttext">Carbs</p>
       </li>
     </ul>
     <p class="modal-products__title">Ingredients</p>
     <ul class="modal-products__list">
-      <li>
-        <p>Milk</p>
-        <p>100ml</p>
+      <li class="modal-products__itemingr">
+        <p class="modal-products__pointingr left">Milk</p>
+        <p class="modal-products__pointingr">100ml</p>
       </li>
-      <li>
-        <p>Belgian</p>
-        <p>chocolate 20g</p>
+      <li class="modal-products__itemingr">
+        <p class="modal-products__pointingr left">Belgian chocolate</p>
+        <p class="modal-products__pointingr">20g</p>
       </li>
-      <li>
-        <p>Cream</p>
-        <p>150 ml</p>
+      <li class="modal-products__itemingr">
+        <p class="modal-products__pointingr left">Cream</p>
+        <p class="modal-products__pointingr">150 ml</p>
       </li>
-      <li>
-        <p>Cocoa powder</p>
-        <p>30g</p>
+      <li class="modal-products__itemingr">
+        <p class="modal-products__pointingr left">Cocoa powder</p>
+        <p class="modal-products__pointingr">30g</p>
       </li>
-      <li>
-        <p>Sugar</p>
-        <p>40g</p>
+      <li class="modal-products__itemingr">
+        <p class="modal-products__pointingr left">Sugar</p>
+        <p class="modal-products__pointingr">40g</p>
       </li>
-      <li>
-        <p>Vanilla sugar</p>
-        <p>10g</p>
+      <li class="modal-products__itemingr">
+        <p class="modal-products__pointingr left">Vanilla sugar</p>
+        <p class="modal-products__pointingr">10g</p>
       </li>
     </ul>
     <form class="modal-products__form">
@@ -66,7 +68,7 @@
       <label>
         <input
           type="tel"
-          class="form-input"
+          class="modal-products__form-input"
           name="user-tel"
           placeholder="Phone"
         />
@@ -74,11 +76,11 @@
       <label>
         <textarea
           name="user-сomment"
-          class="modal-comment"
+          class="modal-products__form-input modal-comment"
           placeholder="Comment"
         ></textarea>
       </label>
-      <button type="submit" class="button_accent button">Submit</button>
+      <button type="submit" class="button_accent button position">Submit</button>
     </form>
   </div>
 </div>
