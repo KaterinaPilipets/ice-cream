@@ -1,7 +1,7 @@
+
 <div class="backdrop is-hidden" data-modal>
-  <!-- <div class="backdrop" data-modal> -->
   <div class="modal modal-products">
-    <button type="button" class="modal__close" data-modal-close>
+    <button type="button" class="modal__close" produkts-modal-close>
       <svg class="modal__close-btn" width="20" height="20">
         <use href="./images/icons.svg#icon__close-big"></use>
       </svg>
@@ -59,6 +59,8 @@
         <input
           type="text"
           class="modal-products__form-input"
+          required
+          pattern="[a-zA-Za-яА-ЯіІїЇ']+"
           name="user-name"
           placeholder="Name"
         />
@@ -67,6 +69,8 @@
         <input
           type="tel"
           class="modal-products__form-input"
+          required
+          pattern="[0-9]{10}"
           name="user-tel"
           placeholder="Phone"
         />
@@ -75,6 +79,7 @@
         <textarea
           name="user-сomment"
           class="modal-products__form-input modal-comment"
+          required
           placeholder="Comment"
         ></textarea>
       </label>
