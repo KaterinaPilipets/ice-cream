@@ -1,4 +1,3 @@
-
 .products--photo {
 
     margin-left: auto;
@@ -28,9 +27,10 @@
             background-image: url(../images/products/icebackground-tab-2x.jpg);
         }
     }
+
     @include desktop {
         background-image: url(../images/products/icebackground-desk.jpg);
-    
+
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
@@ -42,7 +42,7 @@
 
 
 .container--view {
-    max-width: 1200px;
+    // max-width: 1200px;
     padding-top: 60px;
     background-color: transparent;
 
@@ -53,6 +53,7 @@
 
 .section__lable--style {
     color: var(--text-color_dark);
+
     @include desktop {
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
@@ -66,6 +67,7 @@
     @include tablet {
         margin-bottom: 200px;
     }
+
     @include desktop {
         margin-bottom: 300px;
     }
@@ -74,6 +76,7 @@
 .product-cards {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 0;
@@ -87,16 +90,18 @@
         flex-wrap: nowrap;
         gap: 15px;
         align-items: normal;
+        flex-direction: row;
 
         .product-cards:last-child {
             gap: 0;
         }
     }
+
     @include desktop {
         gap: 32px;
 
         .product-cards:last-child {
-        gap: 0;
+            gap: 0;
         }
     }
 }
@@ -122,6 +127,7 @@
         padding-left: 26px;
         padding-right: 26px;
     }
+
     @include desktop {
         width: 370px;
         height: 535px;
@@ -143,9 +149,11 @@
 .product-cards__item--color-icecream {
     background: var(--bg-color-ice-cream);
     border-radius: 24px;
+
     @include tablet {
         border-radius: 16px;
     }
+
     @include desktop {
         border-radius: 24px;
     }
@@ -155,21 +163,25 @@
 .product-cards__item--color-icecoffee {
     background: var(--bg-color-ice-coffee);
     border-radius: 24px;
+
     @include tablet {
         border-radius: 16px;
     }
+
     @include desktop {
         border-radius: 24px;
-    }   
+    }
 
 }
 
 .product-cards__item--color-milkshakes {
     background: var(--bg-color-milkshakes);
     border-radius: 24px;
+
     @include tablet {
         border-radius: 16px;
-    }    
+    }
+
     @include desktop {
         border-radius: 24px;
     }
@@ -180,9 +192,11 @@
     color: var(--text-color_dark);
 
     margin-bottom: 40px;
+
     @include tablet {
         font-size: 22px;
     }
+
     @include desktop {
         font-size: 30px;
         margin-bottom: 65px;
@@ -210,6 +224,7 @@
     background-color: transparent;
     border: transparent;
 }
+
 .product-cards__button:hover .product-cards__icon {
     width: 50px;
     background-image: url(../images/icons.svg#icon__arrow-2);
@@ -246,12 +261,14 @@
     position: absolute;
     background-position-y: -13px;
     border-radius: 100px;
+
     @include desktop {
         border-radius: 150px;
         background-position-y: -17px;
         top: -30%;
     }
 }
+
 .product-cards__item--color-icecream::before {
     background-size: cover;
     background-repeat: no-repeat;
@@ -267,12 +284,13 @@
             background-image: url(../images/products/products1-mobile-tablet@2x.png);
         }
     }
+
     @include desktop {
         background-image: url(../images/products/products1-desktop.png);
         width: 300px;
         height: 300px;
         box-shadow: 0px 8px 30px rgba(10, 136, 23, 0.25);
-    
+
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
@@ -296,12 +314,13 @@
             background-image: url(../images/products/products2-mobile-tablet@2x.png);
         }
     }
+
     @include desktop {
         background-image: url(../images/products/products2-desktop.png);
         width: 300px;
         height: 300px;
         box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
-    
+
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
@@ -326,12 +345,13 @@
             background-image: url(../images/products/products3-mobile-tablet@2x.png);
         }
     }
+
     @include desktop {
         background-image: url(../images/products/products3-desktop.png);
         width: 300px;
         height: 300px;
         box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
-    
+
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
