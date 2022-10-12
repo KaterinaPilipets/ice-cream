@@ -53,6 +53,11 @@
         border: 1px solid #84A178;
         border-radius: 10px;   
         padding-left: 12px;
+        @include tablet {
+            height: 42px;
+     
+         }
+
     }
     
     .modal-form__label + .modal-form__label {
@@ -74,6 +79,11 @@
     background: rgba(248, 210, 78, 0.1);
     border: 1px solid #84A178;
     border-radius: 10px;
+    @include tablet {
+        height: 84px;
+        padding: 11px 16px;
+ 
+     }
    
     }
 
@@ -83,9 +93,8 @@
         color: var(--text-color_dark);
     }
 
-     
-    .modal-location__btn,
-    .modal-franchise__btn {
+    .modal-franchise__btn, 
+    .modal-location__btn {
         margin-left: auto;
         margin-right: auto;
         margin-top: 24px;
@@ -93,6 +102,8 @@
             margin-top: 32px;
         }
     }
+
+ 
  
     
     
@@ -129,6 +140,7 @@
         font-size: 12px;
         line-height: 1.4;
         color: var(--text-color_dark);
+        
     } 
 
     .picture-location {
