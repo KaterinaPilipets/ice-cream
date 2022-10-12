@@ -1,4 +1,12 @@
 @media screen and (min-width: 320px) {
+.bg-img {
+        background-image: linear-gradient(var(--bg-color-top), var(--bg-color-top)),
+            url(../images/gallery/icebackground-mobile.png),
+            linear-gradient(var(--bg-color-top), var(--bg-color-top));
+        background-position: top 0px center, top 25px center, top 1166px center;
+        background-repeat: no-repeat;
+        background-size: 100% 25px, 100% 1166px, 100% 1300px;
+    }
     .reviews {
         padding-top: 80px;
     }
@@ -75,18 +83,24 @@
         height: 12px;
 
     }
-
-
 }
-
 
 @include mobile {
     .reviews__subject {
         max-width: 100%;
-    }
+    }          
 }
 
-@include tablet {
+@include tablet {.bg-img {
+        background-image: linear-gradient(var(--bg-color-top), var(--bg-color-top)),
+            url(../images/gallery/icebackground-tablet.jpg),
+            linear-gradient(var(--bg-color-top), var(--bg-color-top));
+        background-position: top 0px center, top 50px center, top 1070px center;
+        background-repeat: no-repeat;
+        background-size: 100% 164px, 100% 958px, 100% 100%;
+
+    }
+
     .reviews {
         padding-top: 60px;
     }
@@ -118,6 +132,15 @@
 }
 
 @include desktop {
+    .bg-img {
+            background-image: linear-gradient(var(--bg-color-top), var(--bg-color-top)),
+                url(../images/gallery/icebackground-desktop.jpg),
+                linear-gradient(var(--bg-color-top), var(--bg-color-top));
+            background-position: top 0px center, top 50px center, top 1070px center;
+            background-repeat: no-repeat;
+            background-size: 100% 94px, 100% 1024px, 100% 444px;
+    
+        }
     .reviews {
         padding-top: 128px;
     }
@@ -138,9 +161,11 @@
     }
 }
 
-.bg-img {
-    background-image: linear-gradient(var(--bg-color-top), var(--bg-color-top)), url(../images/gallery/icebackground-mobile.png), linear-gradient(var(--bg-color-top), var(--bg-color-top));
-    background-position: top 0px center, top 50px center, top 1070px center;
-    background-repeat: no-repeat;
-    background-size: 1200px 50px, 1200px 1020px, 1200px 50px;
-}
+// .bg-img {
+//     background-image: linear-gradient(var(--bg-color-top), var(--bg-color-top)),
+//      url(../images/gallery/icebackground-mobile.png),
+//       linear-gradient(var(--bg-color-top), var(--bg-color-top));
+//     background-position: top 0px center, top 50px center, top 1070px center;
+//     background-repeat: no-repeat;
+//     background-size: 1200px 50px, 1200px 1020px, 1200px 50px;
+// }
