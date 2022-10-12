@@ -1,83 +1,428 @@
 <!-- секція -->
-<section class="reviews">
+<div class="bg-img">
+  <section class="gallery">
     <div class="container">
-        <h2 class="visually-hidden">Customer Reviews</h2>
-        <ul class="slick-js">
-            <li class="reviews__item">
-                <picture>
-                    <source srcset="./images/reviews/reviews01.webp 1x, 
-                                           ./images/reviews/reviews01@2x.webp 2x" type="image/webp" />
+      <h2 class="visually-hidden">Gallery</h2>
+      <div class="gallery__slick autoplay">
+        <div class="gallery__picture">
+          <picture>
+            <source
+              srcset="
+                ./images/gallery/desktop/gallery1@1x-min.webp 1x,
+                ./images/gallery/desktop/gallery1@2x-min.webp 2x
+              "
+              media="(min-width: 1200px)"
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./images/gallery/desktop/gallery1@1x-min.jpg 1x,
+                ./images/gallery/desktop/gallery1@2x-min.jpg 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="
+                ./images/gallery/tablet/gallery1@1x-min.webp 1x,
+                ./images/gallery/tablet/gallery1@2x-min.webp 2x
+              "
+              media="(min-width: 768px)"
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./images/gallery/tablet/gallery1@1x-min.jpg 1x,
+                ./images/gallery/tablet/gallery1@2x-min.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/gallery/mobile/gallery1@1x-min.webp 1x,
+                ./images/gallery/mobile/gallery1@2x-min.webp 2x
+              "
+              media="(max-width: 767px)"
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./images/gallery/mobile/gallery1@1x-min.jpg 1x,
+                ./images/gallery/mobile/gallery1@2x-min.jpg 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <img
+              src="./images/gallery/mobile/gallery1@1x-min.jpg"
+              alt="ice-cream"
+              class="gallery__img"
+            />
+          </picture>
+        </div>
 
-                    <source srcset="./images/reviews/reviews01.jpg 1x, 
-                                   ./images/reviews/reviews01@2x.jpg 2x" />
+        <div>
+          <picture>
+            <source
+              srcset="
+                ./images/gallery/desktop/gallery2@1x-min.webp,
+                ./images/gallery/desktop/gallery2@2x-min.webp
+              "
+              media="(min-width: 1200px)"
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./images/gallery/desktop/gallery2@1x-min.jpg 1x,
+                ./images/gallery/desktop/gallery2@2x-min.jpg 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="
+                ./images/gallery/tablet/gallery2@1x-min.webp 1x,
+                ./images/gallery/tablet/gallery2@2x-min.webp 2x
+              "
+              media="(min-width: 768px)"
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./images/gallery/tablet/gallery2@1x-min.jpg 1x,
+                ./images/gallery/tablet/gallery2@2x-min.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/gallery/mobile/gallery2@1x-min.webp 1x,
+                ./images/gallery/mobile/gallery2@2x-min.webp 2x
+              "
+              media="(max-width: 767px)"
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./images/gallery/mobile/gallery2@1x-min.jpg 1x,
+                ./images/gallery/mobile/gallery2@2x-min.jpg 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <img
+              src="./images/gallery/mobile/gallery2@1x-min.jpg"
+              alt="ice-cream"
+              class="gallery__img"
+            />
+          </picture>
+        </div>
 
-                    <img class="reviews__photo" src="
-                    ./images/reviews/reviews01.jpg" alt="photo emeli">
-                </picture>
-
-                <p class="reviews__text">I love visiting your cafe.
-                    You prepare the most delicious ice cream in Los Angeles! In
-                    addition, you have beautiful
-                    serving, cozy atmosphere and polite staff.
-                </p>
-                <p class="reviews__subject">Emily, Los Angeles</p>
-            </li>
-            <li class="reviews__item">
-                <picture>
-                    <source srcset="./images/reviews/reviews02.webp 1x, 
-                        ./images/reviews/reviews02@2x.webp 2x" type="image/webp" />
-
-                    <source srcset="./images/reviews/reviews02.jpg 1x, 
-                         ./images/reviews/reviews02@2x.jpg 2x" />
-
-                    <img class="reviews__photo" src="
-                         ./images/reviews/reviews02.jpg" alt="photo sem">
-                </picture>
-
-                <p class="reviews__text">I love eating popsicles on a hot day.
-                    Yours is always delicious.
-                    I recommend your cafe to everyone I know.
-                </p>
-                <p class="reviews__subject">Sam, Los Angeles</p>
-            </li>
-            <li class="reviews__item">
-                <picture>
-                    <source srcset="./images/reviews/reviews03.webp 1x, 
-                        ./images/reviews/reviews03@2x.webp 2x" type="image/webp" />
-
-                    <source srcset="./images/reviews/reviews03.jpg 1x, 
-                         ./images/reviews/reviews03@2x.jpg 2x" />
-
-                    <img class="reviews__photo" src="
-                        ./images/reviews/reviews03.jpg" alt="photo dian">
-                </picture>
-
-                <p class="reviews__text">Ice cream is my passion!
-                    I love your chocolate hazelnut ice cream!
-                    And I really like the excellent service - always
-                    served politely and quickly!
-                </p>
-                <p class="reviews__subject">Diana, Chicago</p>
-            </li>
-            <li class="reviews__item">
-                <picture>
-                    <source srcset="./images/reviews/reviews04.webp 1x, 
-                         ./images/reviews/reviews04@2x.webp 2x" type="image/webp" />
-
-                    <source srcset="./images/reviews/reviews04.jpg 1x, 
-                        ./images/reviews/reviews04@2x.jpg 2x" />
-
-                    <img class="reviews__photo" src="
-                        ./images/reviews/reviews04.jpg" alt="photo bryan">
-                </picture>
-
-                <p class="reviews__text">Every day we come to you with friends after classes in college.
-                    We love your ice cream and casual atmosphere!
-
-                </p>
-                <p class="reviews__subject">Bryan, New-York</p>
-            </li>
-        </ul>
+        <div>
+          <picture>
+            <source
+              srcset="
+                ./images/gallery/desktop/gallery3@1x-min.webp 1x,
+                ./images/gallery/desktop/gallery3@2x-min.webp 2x
+              "
+              media="(min-width: 1200px)"
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./images/gallery/desktop/gallery3@1x-min.jpg 1x,
+                ./images/gallery/desktop/gallery3@2x-min.jpg 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="
+                ./images/gallery/tablet/gallery3@1x-min.webp 1x,
+                ./images/gallery/tablet/gallery3@2x-min.webp 2x
+              "
+              media="(min-width: 768px)"
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./images/gallery/tablet/gallery3@1x-min.jpg 1x,
+                ./images/gallery/tablet/gallery3@2x-min.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/gallery/mobile/gallery3@1x-min.webp 1x,
+                ./images/gallery/mobile/gallery3@2x-min.webp 2x
+              "
+              media="(max-width: 767px)"
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./images/gallery/mobile/gallery3@1x-min.jpg 1x,
+                ./images/gallery/mobile/gallery3@2x-min.jpg 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <img
+              src="./images/gallery/mobile/gallery3@1x-min.jpg"
+              alt="ice-cream"
+              class="gallery__img"
+            />
+          </picture>
+        </div>
+      </div>
     </div>
+  </section>
+  <section class="reviews">
+    <div class="container">
+      <h2 class="visually-hidden">Customer Reviews</h2>
+      <ul class="slick-js">
+        <li class="reviews__item">
+          <picture>
+            <source
+              srcset="
+                ./images/reviews/reviews01.webp    1x,
+                ./images/reviews/reviews01@2x.webp 2x
+              "
+              type="image/webp"
+            />
 
-</section>
+            <source
+              srcset="
+                ./images/reviews/reviews01.jpg    1x,
+                ./images/reviews/reviews01@2x.jpg 2x
+              "
+            />
+
+            <img
+              class="reviews__photo"
+              src="
+                    ./images/reviews/reviews01.jpg"
+              alt="photo emeli"
+            />
+          </picture>
+
+          <p class="reviews__text">
+            I love visiting your cafe. You prepare the most delicious ice cream
+            in Los Angeles! In addition, you have beautiful serving, cozy
+            atmosphere and polite staff.
+          </p>
+          <p class="reviews__subject">Emily, Los Angeles</p>
+        </li>
+        <li class="reviews__item">
+          <picture>
+            <source
+              srcset="
+                ./images/reviews/reviews02.webp    1x,
+                ./images/reviews/reviews02@2x.webp 2x
+              "
+              type="image/webp"
+            />
+
+            <source
+              srcset="
+                ./images/reviews/reviews02.jpg    1x,
+                ./images/reviews/reviews02@2x.jpg 2x
+              "
+            />
+
+            <img
+              class="reviews__photo"
+              src="
+                         ./images/reviews/reviews02.jpg"
+              alt="photo sem"
+            />
+          </picture>
+
+          <p class="reviews__text">
+            I love eating popsicles on a hot day. Yours is always delicious. I
+            recommend your cafe to everyone I know.
+          </p>
+          <p class="reviews__subject">Sam, Los Angeles</p>
+        </li>
+        <li class="reviews__item">
+          <picture>
+            <source
+              srcset="
+                ./images/reviews/reviews03.webp    1x,
+                ./images/reviews/reviews03@2x.webp 2x
+              "
+              type="image/webp"
+            />
+
+            <source
+              srcset="
+                ./images/reviews/reviews03.jpg    1x,
+                ./images/reviews/reviews03@2x.jpg 2x
+              "
+            />
+
+            <img
+              class="reviews__photo"
+              src="
+                        ./images/reviews/reviews03.jpg"
+              alt="photo dian"
+            />
+          </picture>
+
+          <p class="reviews__text">
+            Ice cream is my passion! I love your chocolate hazelnut ice cream!
+            And I really like the excellent service - always served politely and
+            quickly!
+          </p>
+          <p class="reviews__subject">Diana, Chicago</p>
+        </li>
+        <li class="reviews__item">
+          <picture>
+            <source
+              srcset="
+                ./images/reviews/reviews04.webp    1x,
+                ./images/reviews/reviews04@2x.webp 2x
+              "
+              type="image/webp"
+            />
+
+            <source
+              srcset="
+                ./images/reviews/reviews04.jpg    1x,
+                ./images/reviews/reviews04@2x.jpg 2x
+              "
+            />
+
+            <img
+              class="reviews__photo"
+              src="
+                        ./images/reviews/reviews04.jpg"
+              alt="photo bryan"
+            />
+          </picture>
+
+          <p class="reviews__text">
+            Every day we come to you with friends after classes in college. We
+            love your ice cream and casual atmosphere!
+          </p>
+          <p class="reviews__subject">Bryan, New-York</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section id="contacts" class="contacts">
+    <div class="container">
+      <h2 class="visually-hidden">contacts</h2>
+
+      <ul class="contacts__list">
+        <li class="contacts__item">
+          <p class="contacts__name">CAFE</p>
+          <p class="contacts__location">Chicago</p>
+          <address>
+            <a class="contacts__link link" href=""
+              >10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA</a
+            >
+          </address>
+
+          <ul class="schedule">
+            <li class="schedule__item">
+              <p class="schedule__day">Monday - Friday</p>
+              <p class="schedule__time">06:00 AM - 10:00 PM</p>
+            </li>
+            <li class="schedule__item">
+              <p class="schedule__day">Saturday - Sunday</p>
+              <p class="schedule__time">08:00 AM - 16:00 PM</p>
+            </li>
+          </ul>
+
+          <ul class="contacts-inform">
+            <li class="contacts-inform__item">
+              <a class="link" href="tel:+61(0)383766284">+61(0) 383 766 284</a>
+            </li>
+            <li class="contacts-inform__item">
+              <a class="link" href="mailto:noreply@envato.com"
+                >noreply@envato.com</a
+              >
+            </li>
+          </ul>
+        </li>
+
+        <li class="contacts__item">
+          <p class="contacts__name">FOOD TRUCK</p>
+          <p class="contacts__location">Los Angeles</p>
+          <address>
+            <a class="contacts__link link" href=""
+              >1003 Manhattan Ave, Manhattan Beach, CA 90263, USA</a
+            >
+          </address>
+
+          <ul class="schedule">
+            <li class="schedule__item">
+              <p class="schedule__day">Monday - Friday</p>
+              <p class="schedule__time">06:00 AM - 10:00 PM</p>
+            </li>
+            <li class="schedule__item">
+              <p class="schedule__day">Saturday - Sunday</p>
+              <p class="schedule__time">08:00 AM - 16:00 PM</p>
+            </li>
+          </ul>
+          <ul class="contacts-inform">
+            <li class="contacts-inform__item">
+              <a class="link" href="tel:+61(0)383766284">+61(0) 383 766 284</a>
+            </li>
+            <li class="contacts-inform__item">
+              <a class="link" href="mailto:noreply@envato.com"
+                >noreply@envato.com</a
+              >
+            </li>
+          </ul>
+        </li>
+
+        <li class="contacts__item">
+          <p class="contacts__name">CAFE</p>
+          <p class="contacts__location">New York</p>
+
+          <address>
+            <a class="contacts__link link" href=""
+              >726 Sterling Pl, Brooklyn, NY 11222, USA</a
+            >
+          </address>
+
+          <ul class="schedule">
+            <li class="schedule__item">
+              <p class="schedule__day">Monday - Friday</p>
+              <p class="schedule__time">06:00 AM - 10:00 PM</p>
+            </li>
+            <li class="schedule__item">
+              <p class="schedule__day">Saturday - Sunday</p>
+              <p class="schedule__time">08:00 AM - 16:00 PM</p>
+            </li>
+          </ul>
+
+          <ul class="contacts-inform">
+            <li class="contacts-inform__item">
+              <a class="link" href="tel:+61(0)383766284">+61(0) 383 766 284</a>
+            </li>
+            <li class="contacts-inform__item">
+              <a class="link" href="mailto:noreply@envato.com"
+                >noreply@envato.com</a
+              >
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <div class="contacts__buttons">
+        <button class="button_accent button" type="button" location-modal-open>
+          Our locations
+          <svg class="button__arrow">
+            <use href="./images/icons.svg#icon__btn"></use>
+          </svg>
+        </button>
+        <button
+          class="button_border button contacts__btn"
+          type="button"
+          franshise-modal-open
+        >
+          Franchise
+          <svg class="button__arrow">
+            <use href="./images/icons.svg#icon__btn"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+</div>

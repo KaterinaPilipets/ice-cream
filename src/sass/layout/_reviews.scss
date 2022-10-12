@@ -2,20 +2,22 @@
     .reviews {
         padding-top: 80px;
     }
+
     .reviews__photo {
         width: 85px;
         height: 85px;
         border-radius: 50%;
         margin: 0 auto 32px;
-       
+
     }
 
     .reviews__item {
         width: 100%;
         margin-bottom: 0;
-       
+
     }
-.reviews__text {
+
+    .reviews__text {
         height: 256px;
         padding: 34px 39px;
         margin-bottom: 30px;
@@ -30,7 +32,7 @@
     }
 
     .reviews__subject {
-       width: 100%;
+        width: 100%;
         margin: 0 auto;
         color: #131313;
 
@@ -38,52 +40,56 @@
         font-size: 20px;
         line-height: 1.86;
         text-align: center;
-       
-    }
-    
-.slick-dots {
-    position: static;
-    margin-top: 10px;
-}
-.slick-dots li {
-    margin: 0;
-    width: 12px;
-    height: 12px;
 
-&:not(:last-child) {
-    margin-right: 18px;
-}
-}
-           .slick-dots li button {
-            width: 12px;
-            height: 12px;
-            padding: 0;
-            &:before {
-                    position: static;
-                    font-size: 12px;
-                }
-             }
-    
+    }
+
+    .slick-dots {
+        position: static;
+        margin-top: 10px;
+    }
+
+    .slick-dots li {
+        margin: 0;
+        width: 12px;
+        height: 12px;
+
+        &:not(:last-child) {
+            margin-right: 18px;
+        }
+    }
+
+    .slick-dots li button {
+        width: 12px;
+        height: 12px;
+        padding: 0;
+
+        &:before {
+            position: static;
+            font-size: 12px;
+        }
+    }
+
     .slick-dots li.slick-active button:before {
         color: var(--bg-color-top);
         width: 12px;
-            height: 12px;
-        
-    }
-       
+        height: 12px;
 
-        }
+    }
+
+
+}
 
 
 @include mobile {
     .reviews__subject {
-    max-width: 100%;
+        max-width: 100%;
     }
 }
+
 @include tablet {
     .reviews {
-            padding-top: 60px;
-        }
+        padding-top: 60px;
+    }
 
     .reviews__photo {
         margin-bottom: 28px;
@@ -94,36 +100,47 @@
         padding: 29px 80px 28px;
         margin-bottom: 32px;
         font-weight: 500;
-            font-size: 14px;
-            line-height: 1.86;
+        font-size: 14px;
+        line-height: 1.86;
         border-radius: 24px;
     }
-         .reviews__subject {
+
+    .reviews__subject {
         font-size: 16px;
         margin-bottom: 32px;
-         }
-                 .slick-dots {
-                     position: static;
-                     margin-top: 28px;
-                 }
+    }
+
+    .slick-dots {
+        position: static;
+        margin-top: 28px;
+    }
 
 }
+
 @include desktop {
     .reviews {
-            padding-top: 128px;
-        }
+        padding-top: 128px;
+    }
 
-     .slick-js {
+    .slick-js {
         padding-right: 96px;
         padding-left: 96px;
-     } 
+    }
 
     .reviews__photo {
-            margin-bottom: 32px;
-        }
-                .reviews__text {
+        margin-bottom: 32px;
+    }
+
+    .reviews__text {
         height: 138px;
         padding: 39px 109px 47px;
         font-size: 16px;
-                }
+    }
+}
+
+.bg-img {
+    background-image: linear-gradient(var(--bg-color-top), var(--bg-color-top)), url(../images/gallery/icebackground-mobile.png), linear-gradient(var(--bg-color-top), var(--bg-color-top));
+    background-position: top 0px center, top 50px center, top 1070px center;
+    background-repeat: no-repeat;
+    background-size: 1200px 50px, 1200px 1020px, 1200px 50px;
 }
