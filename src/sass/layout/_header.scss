@@ -16,11 +16,13 @@
     padding-bottom: 4px;
   }
 }
+
 .page-header__logo-link {
   @include desktop {
     margin-right: 269px;
   }
 }
+
 .page-header__logo {
   width: 40px;
   height: 37px;
@@ -35,6 +37,7 @@
     height: 65px;
   }
 }
+
 .navigation {
   display: none;
 
@@ -42,12 +45,14 @@
     display: flex;
   }
 }
+
 .navigation__list {
   @include desktop {
     display: flex;
     gap: 27px;
   }
 }
+
 .navigation__link {
   display: block;
   padding-top: 32px;
@@ -76,12 +81,14 @@
     margin-bottom: 4px;
   }
 }
+
 .header-menu {
   line-height: 0;
   padding: 0;
   background-color: transparent;
   border: none;
 }
+
 .header__btn-burger {
   width: 32px;
   height: 32px;
@@ -90,6 +97,7 @@
     display: none;
   }
 }
+
 .buy-now__button {
   display: none;
 
@@ -97,6 +105,7 @@
     display: flex;
   }
 }
+
 .mobile-menu {
   position: fixed;
   top: 0;
@@ -108,9 +117,11 @@
   transform: translateX(-100%);
   transition: transform 250ms ease-in;
 }
+
 .mobile-menu.is-open {
   transform: translateX(0);
 }
+
 .mobile-menu__container {
   width: 100%;
   height: 100%;
@@ -127,6 +138,7 @@
     padding: 20px 32px 0 32px;
   }
 }
+
 .mobile-menu__block {
   display: flex;
   justify-content: space-between;
@@ -137,9 +149,11 @@
     margin-bottom: 76px;
   }
 }
+
 .mobile-menu__logo {
   display: block;
 }
+
 .menu-logo {
   width: 40px;
   height: 37px;
@@ -149,6 +163,7 @@
     height: 44px;
   }
 }
+
 .mobile-menu__close-button {
   padding: 0;
   line-height: 0;
@@ -177,6 +192,7 @@
 .site-nav__item:focus .link {
   color: var(--text-color_dark);
 }
+
 .navigation__link-mobile {
   font-weight: 700;
   font-size: 32px;

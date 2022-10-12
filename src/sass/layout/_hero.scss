@@ -5,19 +5,15 @@
     background-color: var(--bg-color-top);
     margin-left: auto;
     margin-right: auto;
-    // object-fit: cover;
     max-width: 320px;
-    //     height: 502px;
-    // height: 100%;
-    // width: 100%;
     background-image: url(../images/hero/hero1-mobile.png),
         url(../images/hero/hero2-mobile.png);
-    background-size: 170px, 320px;
-    // float: left;
-    background-position: bottom -33px right 68px, bottom 0px right 0px;
-    
+
+    background-position: bottom -53px right 12px, bottom 0px right 0px;
+
 }
- .hero__container{
+
+.hero__container {
     @media screen and (max-width: 767px) {
         min-height: 502px;
     }
@@ -28,6 +24,7 @@ screen and (min-resolution: 192dpi) and (max-width: 767px),
 screen and (min-resolution: 2dppx) and (max-width: 767px) {
     .hero {
         background-image: url(../images/hero/hero1-mobile@2x.png), url(../images/hero/hero2-mobile@2x.png);
+        // background-size: 170px, 320px;
     }
 
     // .success {
@@ -37,13 +34,14 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 
 @media screen and (min-width: 768px) {
     .hero {
-        background-image: url(../images/hero/hero1-tablet.png), url(../images/hero/hero2-tablet.png), url(../images/hero/hero3-tablet.png);
+        background-image: url(../images/hero/hero1-tablet.png), url(../images/hero/hero3-tablet.png), url(../images/hero/hero2-tablet.png);
         max-width: 768px;
-        background-size: 270px, 768px, 152px,;
-        background-position: right 80px bottom -40px, right 0px bottom 0px, left 30px bottom 10px;
+        // background-size: 270px, 768px, 152px, ;
+        background-position: right 80px bottom -40px, left 30px bottom 10px,
+            right 0px bottom 0px;
         height: 415px;
     }
-   
+
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
@@ -56,10 +54,11 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
 
 @media screen and (min-width: 1200px) {
     .hero {
-        background-image: url(../images/hero/hero1-desctop.png), url(../images/hero/hero2-desctop.png), url(../images/hero/hero3-desctop.png);
+        background-image: url(../images/hero/hero1-desctop.png), url(../images/hero/hero3-desctop.png), url(../images/hero/hero2-desctop.png);
         max-width: 1200px;
-        background-size: 484px, 1200px, 225px;
-        background-position: right 90px bottom -80px, right 0 bottom 0, left 10px bottom 60px;
+        // background-size: 484px, 1200px, 225px;
+        background-position: right 90px bottom -80px, left 10px bottom 60px,
+            right 0 bottom 0;
         height: 664px;
     }
 }
@@ -85,28 +84,31 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     width: 247px;
 
     @media screen and (min-width: 768px) {
-    font-size: 18px;
-    width: 181px;
-    margin-bottom: 32px;
-}
-@media screen and (min-width: 1200px) {
+        font-size: 18px;
+        width: 181px;
+        margin-bottom: 32px;
+    }
+
+    @media screen and (min-width: 1200px) {
         margin-bottom: 28px;
         font-size: 38px;
         width: 367px;
     }
 }
 
-.hero__part{
-font-size: 34px;
-@media screen and (min-width: 768px) {
-    font-size: 24px;
-}
-@media screen and (min-width: 1200px) {
-    font-size: 38px;
-}
+.hero__part {
+    font-size: 34px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 24px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 38px;
+    }
 }
 
-.hero__list{
+.hero__list {
     display: flex;
 }
 
@@ -142,45 +144,49 @@ font-size: 34px;
 
 
 
-.hero__text{
+.hero__text {
     display: none;
 
-@media screen and (min-width: 768px) {
-    font-size: 12px;
+    @media screen and (min-width: 768px) {
+        font-size: 12px;
         line-height: 1.4;
         width: 200px;
         margin-left: 217px;
         display: block;
-}
-        @media screen and (min-width: 1200px) {
-            font-size: 14px;
-            margin-left: 256px;
-        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        margin-left: 256px;
+    }
 
 }
+
 summary {
     display: block;
 }
+
 summary::-webkit-details-marker {
     display: none;
 }
 
-.hero__details{
+.hero__details {
     margin-bottom: 10px;
 
     @media screen and (min-width: 1200px) {
         margin-bottom: 22px;
-}
-}
-.success{
-display: none;
-
-@media screen and (min-width: 768px) {
-display: block;
-}
+    }
 }
 
-.success__quality{
+.success {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
+}
+
+.success__quality {
     font-weight: 900;
     font-size: 28px;
     line-height: 1.21;
@@ -190,22 +196,25 @@ display: block;
 }
 
 @media screen and (min-width: 1200px) {
- .success__quality{
+    .success__quality {
         font-size: 46px;
         line-height: 56px;
-}    
+    }
 }
-.success__description{
+
+.success__description {
     font-size: 8px;
     text-align: right;
     color: var(--bg-color-modal);
 }
+
 @media screen and (min-width: 1200px) {
-    .success__description{
-            font-size: 14px;
+    .success__description {
+        font-size: 14px;
     }
 }
-.hero__wrapper{
+
+.hero__wrapper {
     display: flex;
     padding-top: 110px;
     justify-content: space-between;
@@ -217,6 +226,6 @@ display: block;
 
 }
 
-.hero__icon{
+.hero__icon {
     fill: var(--bg-color-modal);
 }
