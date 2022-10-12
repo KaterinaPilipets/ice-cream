@@ -1,35 +1,53 @@
 <section class="hero">
-  <div class="container">
-    <h1>ice cream made with passion</h1>
-    <ul>
-      <li>
-        <a href="#products">Products</a>
-      </li>
-      <li>
-        <a href="#how-made">How it’s made?</a>
-      </li>
-    </ul>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et
-    </p>
-    <details>
-      <summary>
-        <svg>
-          <use href="#"></use>
-        </svg>
-      </summary>
-      <p>More info about the details.</p>
-    </details>
-    <ul>
-      <li>
-        <p class="">16</p>
-        <p class="">cafes</p>
-      </li>
-      <li>
-        <p class="">23</p>
-        <p class="">food trucks</p>
-      </li>
-    </ul>
+  <div class="container hero__container">
+    <div class="hero__wrapper">
+      <div>
+        <h1 class="hero__title">
+          ice cream made with <span class="hero__part">passion</span>
+        </h1>
+        <ul class="hero__list">
+          <li class="hero__item">
+            <a href="#products" class="hero__link link button button_border"
+              >Products</a
+            >
+          </li>
+          <li class="hero__item">
+            <a href="#how-made" class="hero__link link button"
+              >How it’s made?</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="success">
+        <ul class="success__list">
+          <li class="success__item">
+            <p class="success__quality">16</p>
+            <p class="success__description">cafes</p>
+          </li>
+          <li class="success__item">
+            <p class="success__quality">23</p>
+            <p class="success__description">food trucks</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="hero__text">
+      <p class="hero__details">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et
+      </p>
+      <details>
+        <summary>
+          <svg width="40" height="20" class="hero__icon">
+            <use href="./images/icons.svg#icon__arrow-1"></use>
+          </svg>
+        </summary>
+        <p>
+          More info about the details. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Ullam sequi sed nam itaque accusamus sapiente eum
+          provident modi quam porro?
+        </p>
+      </details>
+    </div>
   </div>
 </section>
