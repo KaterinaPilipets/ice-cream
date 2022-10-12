@@ -1,0 +1,16 @@
+.about__video {
+    width: 224px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    @include tablet {
+        width: 448px;
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+
+
+}
+
+.about__iframe {
+    width: 100%;
+}
