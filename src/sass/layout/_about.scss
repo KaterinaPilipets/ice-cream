@@ -1,58 +1,193 @@
-// .about__img {
-//     padding-top: 39px;
-//     background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
-//     box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
-//     border-radius: 250px;
-// }
+.about__toptitle {
+    letter-spacing: normal;
+    margin-bottom: 32px;
+}
+
 .about {
     background-color: var(--bg-color-top);
+    padding-top: 60px;
+    padding-bottom: 32px;
+    text-align: center;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+    // &__container {
+    //     width: 210px;
+    //     margin-bottom: 38px;
+
+    //     @include tablet {
+    //         width: 456px;
+    //         margin-bottom: 74px;
+    //     }
+
+    //     @include desktop {
+    //         width: 671px;
+    //         margin-bottom: 84px;
+    //     }
+    // }
 }
 
-.about__container {
-    padding-bottom: 60px;
-    padding-top: 70px;
-}
-
-.about__wrapper {
-    display: block;
-    width: 463px;
-}
-
-.about__content-container {
-    display: flex;
-    align-items: center;
-    margin-top: 82px;
-}
-
-.about__section {
-    width: 463px;
-    font-size: 14px;
-    line-height: 1.94;
-    letter-spacing: 0.04em;
+.about__text {
+    display: none;
+    @include tablet {
+        display: block;
+        margin-top: 8px;
+        font-size: 12px;
+        line-height: 1.94;
+        letter-spacing: 0.04em;
+    }
+    @include desktop {
+        font-size: 14px;
+    }
 }
 
 .about__text-first {
-    font-size: 16px;
+    font-size: 12px;
     line-height: 1.76;
-    margin-bottom: 8px;
+    // text-align: center;
+    letter-spacing: 0.04em;
+    @include desktop {
+        font-size: 16px;
+        line-height: 1.76;
+        letter-spacing: 0.04em;
+    }
+
 }
 
 .about__text-second {
-    margin-bottom: 8px;
+    font-size: 12px;
+    line-height: 1.62;
+    letter-spacing: normal;
+    letter-spacing: 0.04em;
+    margin-top: 4px;
+    @include tablet {
+        margin-top: 8px;
+        line-height: 1.76;
+    }
+    @include desktop {
+        font-size: 14px;
+        line-height: 1.94;
+    }
 }
 
 .about__button {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    @include tablet {
+    margin-left: 0;
+    margin-right: 0;
     margin-top: 48px;
+    }
+}
+
+.about__section {
+    width: 220px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    @include tablet {
+    width: 336px;
+        text-align: left;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    @include desktop {
+        width: 463px;
+    }
+}
+
+.about__content-container {
+    @include tablet {
+        display: flex;
+        margin-top: 72px;
+        gap: 32px;
+    }
+
+    @include desktop {
+        align-items: center;
+        margin-top: 82px;
+        gap: 100px;
+    }
+
 }
 
 .cow {
-    width: 490px;
-    height: 529px;
-    margin-right: 100px;
-    background-image: url("../images/about/about-cow-desktop.png"), linear-gradient(90deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
+    width: 279px;
+    height: 300px;
+    background-image: url("../images/about/about-cow-mobile.png"), linear-gradient(90deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
     box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
-    border-radius: 250px;
-    background-size: 490px;
+    border-radius: 50%;
+    background-size: 280px;
     background-repeat: no-repeat;
-    background-position: top 39px left, top left;
+    background-position: top 23px left, top left;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 40px;
+    @include tablet {
+        width: 336px;
+        height: 356px;
+        background-image: url("../images/about/about-cow-tablet.png"), linear-gradient(90deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
+        background-size: 336px;
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+    @include desktop {
+        width: 490px;
+        height: 529px;
+        background-image: url("../images/about/about-cow-desktop.png"), linear-gradient(90deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
+        box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+        border-radius: 250px;
+        background-size: 490px;
+        background-repeat: no-repeat;
+        background-position: top 39px left, top left; 
+    }
 }
+
+// .about__container {
+//     padding-bottom: 60px;
+//     padding-top: 70px;
+// }
+
+// .about__wrapper {
+//     display: block;
+//     width: 463px;
+// }
+
+
+
+// .about__section {
+//     width: 463px;
+//     font-size: 14px;
+//     line-height: 1.94;
+//     letter-spacing: 0.04em;
+// }
+
+// .about__text-first {
+//     font-size: 16px;
+//     line-height: 1.76;
+//     margin-bottom: 8px;
+// }
+
+// .about__text-second {
+//     margin-bottom: 8px;
+// }
+
+// .about__button {
+//     margin-top: 48px;
+// }
+
+// .cow {
+//     width: 490px;
+//     height: 529px;
+//     margin-right: 100px;
+//     background-image: url("../images/about/about-cow-desktop.png"), linear-gradient(90deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
+//     box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+//     border-radius: 250px;
+//     background-size: 490px;
+//     background-repeat: no-repeat;
+//     background-position: top 39px left, top left;
+// }
