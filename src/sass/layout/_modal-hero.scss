@@ -60,27 +60,36 @@
         width: 132px;
         border-radius: 50%;
         position: absolute;
-        top: -60%;
-        left: -1%;
+        top: -50%;
+        left: -1.5%;
     
         }
     
         &__check.ice-cream::before {
             // background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
             box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
-            background-image: url(../images/modal/modal-hero1.png);
+            background-image: url(../images/modal/modal-hero1.png), linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7));
             background-repeat: no-repeat;
-            background-size: cover;            
+            background-size: cover; 
+            background-position-y: -10px, 0;           
         }
     
         &__check.ice-coffee::before {
-            background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+            // background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
             box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+            background-image: url(../images/modal/modal-hero2.png), linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position-y: -10px, 0;
         }
     
         &__check.milkshake::before {
-            background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
+            // background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
             box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+            background-image: url(../images/modal/modal-hero3.png), linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7));
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position-y: -10px, 0;
         }
 }
 
