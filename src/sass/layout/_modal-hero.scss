@@ -2,8 +2,8 @@
 .modal__close-btn {
     position: absolute;
     padding: 0;
-    top: 5;
-    right: 5;
+    top: 8;
+    right: 8;
     border: none;
     background-color: transparent;
 }
@@ -22,6 +22,10 @@
     border: none;
 }
 
+.modal-form__label {
+    padding: 95px 10px 20px 10px;
+}
+
 .modal-form__check  {
     display: flex;
     flex-direction: column;
@@ -31,7 +35,7 @@
     height: 136px;
     border: solid 2px #84A178;
     border-radius: 16px;
-    padding-bottom: 20px;
+    // padding-bottom: 20px;
 
     font-weight: 700;
     text-transform: uppercase;
@@ -39,7 +43,7 @@
     letter-spacing: 0.04em;
 
     &.ice-coffee {
-        border: solid 2px #EFD478;
+        border: solid 2px #EFD478;       
     }
 
     &.milkshake {
@@ -47,7 +51,20 @@
     }
 }
 
+.modal-form__input:checked + .modal-form__check {
 
+    &.ice-cream {
+            background-color: #84A178;
+        }
+
+    &.ice-coffee {
+            background-color: #EFD478;
+        }
+    
+    &.milkshake {
+            background-color: #D6936D;
+        }
+}
 
 .input-group {
     display: flex;
