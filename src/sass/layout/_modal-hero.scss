@@ -2,6 +2,7 @@
 .modal__close-btn {
     position: absolute;
     padding: 0;
+    margin: 0;
     top: 8;
     right: 8;
     border: none;
@@ -93,7 +94,21 @@
         }
 }
 
-    
+.modal-form__input:hover + .modal-form__check,
+.modal-form__input:focus + .modal-form__check {
+
+    &.ice-cream {
+        box-shadow: 0 0 0 3px #84A178;
+    }
+
+    &.ice-coffee {
+        box-shadow: 0 0 0 3px #EFD478;
+    }
+
+    &.milkshake {
+        box-shadow: 0 0 0 3px #D6936D;
+    }
+}
     
 
 
