@@ -1,62 +1,92 @@
 <!-- backdrop -->
 
-<div class="backdropper is-hidden" data-modal>
+<div class="backdrop is-hidden" data-modal>
+  <!-- is-hidden -->
+  <div class="modal">
+    <button type="button" class="modal__close-btn" hero-modal-close>
+      <svg class="modal-close-icon" width="20" height="20">
+        <use href="./images/icons.svg#icon__close"></use>
+      </svg>
+    </button>
 
-    <!-- is-hidden -->
-    <div class="modal">
-        <button type="button" class="modal__close-btn" hero-modal-close>
-            <svg class="modal-close-icon" width="20" height="20">
-                <use href="./images/icons.svg#icon__close"></use>
-            </svg>
-        </button>
+    <!-- modal form -->
+    <form class="modal-form">
+      <p class="modal-form__title section__modal-title">Buy now</p>
 
-        <!-- modal form -->
-        <form class="modal-form">
-            <p class="modal-form__title section__modal-title">Buy now</p>
+      <fieldset class="check-group">
+        <label class="modal-form__check">
+          <input
+            class="modal-form__input"
+            type="checkbox"
+            name="product"
+            value="ice cream"
+          />
+          <!-- visually-hidden -->
+          ice cream
+        </label>
 
+        <label class="modal-form__check ice-coffee">
+          <input
+            class="modal-form__input"
+            type="checkbox"
+            name="product"
+            value="ice coffee"
+          />
+          <!-- visually-hidden -->
+          ice coffee
+        </label>
 
-            <fieldset class="check-group">
-                <label class="modal-form__check">
-                    <input class="modal-form__input" type="checkbox" name="product" value="ice cream">
-                    <!-- visually-hidden -->
-                    ice cream
-                </label>
+        <label class="modal-form__check milkshake">
+          <input
+            class="modal-form__input"
+            type="checkbox"
+            name="product"
+            value="milkshake"
+          />
+          <!-- visually-hidden -->
+          milkshake
+        </label>
+      </fieldset>
 
-                <label class="modal-form__check ice-coffee">
-                    <input class="modal-form__input" type="checkbox" name="product" value="ice coffee">
-                    <!-- visually-hidden -->
-                    ice coffee
-                </label>
+      <div class="input-group">
+        <!-- Name -->
+        <label class="modal-label">
+          <input
+            class="modal-label__input input-group__border"
+            type="text"
+            name="user-name"
+            placeholder="Name"
+            required
+            pattern="[a-zA-Zа-яА-ЯіІїЇъЪёЁ`]+"
+          />
+        </label>
 
-                <label class="modal-form__check milkshake">
-                    <input class="modal-form__input" type="checkbox" name="product" value="milkshake">
-                    <!-- visually-hidden -->
-                    milkshake
-                </label>
-            </fieldset>
+        <!-- Phone -->
+        <label class="modal-label">
+          <input
+            class="modal-label__input input-group__border"
+            type="tel"
+            name="user-phone-number"
+            placeholder="Phone"
+            required
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+            title="XXX-XXX-XX-XX"
+          />
+        </label>
 
-            <div class="input-group">
-                <!-- Name -->
-                <label class="modal-label">
-                    <input class="modal-label__input input-group__border" type="text" name="user-name"
-                        placeholder="Name" required pattern="[a-zA-Zа-яА-ЯіІїЇъЪёЁ`]+">
-                </label>
+        <!-- Comment -->
+        <label class="modal-message">
+          <textarea
+            class="modal-message__form input-group__border"
+            name="user-message"
+            placeholder="Comment"
+          ></textarea>
+        </label>
+      </div>
 
-                <!-- Phone -->
-                <label class="modal-label">
-                    <input class="modal-label__input input-group__border" type="tel" name="user-phone-number"
-                        placeholder="Phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-                        title="XXX-XXX-XX-XX">
-                </label>
-
-                <!-- Comment -->
-                <label class="modal-message">
-                    <textarea class="modal-message__form input-group__border" name="user-message"
-                        placeholder="Comment"></textarea>
-                </label>
-            </div>
-
-            <button type="submit" class="modal-form__submit-btn button">Submit</button>
-        </form>
-    </div>
+      <button type="submit" class="modal-form__submit-btn button">
+        Submit
+      </button>
+    </form>
+  </div>
 </div>
