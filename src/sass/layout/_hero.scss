@@ -9,7 +9,7 @@
     background-image: url(../images/hero/hero1-mobile.png),
         url(../images/hero/hero2-mobile.png);
 
-    background-position: bottom -53px right 12px, bottom 0px right 0px;
+    background-position: bottom -53px right 12px, bottom 0px center;
 
 }
 
@@ -24,7 +24,9 @@ screen and (min-resolution: 192dpi) and (max-width: 767px),
 screen and (min-resolution: 2dppx) and (max-width: 767px) {
     .hero {
         background-image: url(../images/hero/hero1-mobile@2x.png), url(../images/hero/hero2-mobile@2x.png);
-        background-size: contain, 320px;
+        background-size: 75%, 320px;
+        background-position: bottom -35px right 37px, bottom 0px right 0px,
+            bottom 0px right 0px;
     }
 
     // .success {
@@ -37,9 +39,12 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
         background-image: url(../images/hero/hero1-tablet.png), url(../images/hero/hero3-tablet.png), url(../images/hero/hero2-tablet.png);
         max-width: 768px;
         // background-size: 270px, 768px, 152px, ;
-        background-position: right 22px bottom -56px, left 30px bottom 14px,
+        background-position: right 5px bottom -56px, left 30px bottom 10px,
             right 0px bottom 0px;
         height: 415px;
+        // right 5px bottom -56px,
+        //     left 30px bottom 10px,
+        //     right 0 bottom 0
     }
 
 }
@@ -48,7 +53,12 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 screen and (min-resolution: 192dpi) and (min-width: 768px),
 screen and (min-resolution: 2dppx) and (min-width: 768px) {
     .hero {
-        background-image: url(../images/hero/hero1-tablet@2x.png), url(../images/hero/hero2-tablet@2x.png), url(../images/hero/hero3-tablet.png);
+        background-image: url(../images/hero/hero1-tablet@2x.png), url(../images/hero/hero3-tablet@2x.png), url(../images/hero/hero2-tablet@2x.png);
+        background-size: 50%, 152px, 768px;
+        background-position: right 20px bottom -58px,
+            left 15px bottom 5,
+            right 0 bottom 0;
+
     }
 }
 
@@ -57,7 +67,8 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
         background-image: url(../images/hero/hero1-desctop.png), url(../images/hero/hero3-desctop.png), url(../images/hero/hero2-desctop.png);
         max-width: 1200px;
         // background-size: 484px, 1200px, 225px;
-        background-position: right 0px bottom -100px, left 17px bottom 62px,
+        background-position: right 20px bottom -100px,
+            left 10px bottom 60px,
             right 0 bottom 0;
         height: 664px;
     }
@@ -68,6 +79,8 @@ screen and (min-resolution: 192dpi) and (min-width: 1200px),
 screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     .hero {
         background-image: url(../images/hero/hero1-desctop@2x.png), url(../images/hero/hero2-desctop@2x.png), url(../images/hero/hero3-desctop@2x.png);
+        background-size: 484px, 1200px, 225px;
+        background-position: bottom -35px right 37px, bottom 0px right 0px;
     }
 }
 

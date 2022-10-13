@@ -4,14 +4,19 @@
 }
 
 .about {
-    background-color: var(--bg-color-top);
+
+
+
+
+
+
     padding-top: 60px;
     padding-bottom: 32px;
     text-align: center;
-    max-width: 1200px;
+
     margin-left: auto;
     margin-right: auto;
-    
+
 
     // &__container {
     //     width: 210px;
@@ -31,6 +36,7 @@
 
 .about__text {
     display: none;
+
     @include tablet {
         display: block;
         margin-top: 8px;
@@ -38,6 +44,7 @@
         line-height: 1.94;
         letter-spacing: 0.04em;
     }
+
     @include desktop {
         font-size: 14px;
     }
@@ -48,6 +55,7 @@
     line-height: 1.76;
     // text-align: center;
     letter-spacing: 0.04em;
+
     @include desktop {
         font-size: 16px;
         line-height: 1.76;
@@ -62,10 +70,12 @@
     letter-spacing: normal;
     letter-spacing: 0.04em;
     margin-top: 4px;
+
     @include tablet {
         margin-top: 8px;
         line-height: 1.76;
     }
+
     @include desktop {
         font-size: 14px;
         line-height: 1.94;
@@ -76,10 +86,11 @@
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
+
     @include tablet {
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 48px;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 48px;
     }
 }
 
@@ -88,12 +99,14 @@
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+
     @include tablet {
-    width: 336px;
+        width: 336px;
         text-align: left;
         margin-left: 0;
         margin-right: 0;
     }
+
     @include desktop {
         width: 463px;
     }
@@ -126,6 +139,7 @@
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 40px;
+
     @include tablet {
         width: 336px;
         height: 356px;
@@ -135,6 +149,7 @@
         margin-left: 0;
         margin-bottom: 0;
     }
+
     @include desktop {
         width: 490px;
         height: 529px;
@@ -143,7 +158,7 @@
         border-radius: 250px;
         background-size: 490px;
         background-repeat: no-repeat;
-        background-position: top 39px left, top left; 
+        background-position: top 39px left, top left;
     }
 }
 
