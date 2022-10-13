@@ -4,19 +4,11 @@
 }
 
 .about {
-    background-color: var(--bg-color-top);
-    width: 100%;
-    max-width: 480px;
-    margin-left: auto;
-    margin-right: auto;
 
-    @include tablet {
-        max-width: 768px;
-    }
 
-    @include desktop {
-        max-width: 1200px;
-    }
+
+
+
 
     padding-top: 60px;
     padding-bottom: 32px;

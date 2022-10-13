@@ -1,7 +1,5 @@
 .contacts {
-  // padding-top: 74px;
   padding-bottom: 39px;
-
 
   @include tablet {
     padding-top: 50px;
@@ -15,15 +13,12 @@
   }
 }
 
-
-
 .contacts__list {
   display: flex;
   flex-direction: column;
   gap: 20px;
   width: 100%;
   align-items: center;
-
   color: var(--text-color_dark);
   font-weight: 500;
 
@@ -36,8 +31,6 @@
   @include desktop {
     gap: 32px;
   }
-
-
 }
 
 .contacts__item {
@@ -64,21 +57,16 @@
 }
 
 .contacts__name {
-
-  // border: 1px solid #e1e1e1;
   border-radius: 4px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   padding-left: 22px;
   padding-right: 21px;
   width: fit-content;
-  // height: 16px;
   text-align: center;
   font-weight: 500;
-  // font-size: 12px;
   // зменшила line-height до 1.33 замість 1.86 по макету, щоб розмір візуально як на макеті
   line-height: 1.33;
   letter-spacing: 0.04em;
-  //   color: var(--text-color_dark);
   background-color: var(--color-accent);
   margin-bottom: 20px;
 
@@ -89,9 +77,7 @@
 
 .contacts__location {
   font-weight: 500;
-  // font-size: 12px;
   line-height: 1.86;
-  //   color: var(--text-color_dark);
   margin-bottom: 8px;
 
   @include tablet {
@@ -122,9 +108,6 @@
   padding: 24px 0px;
 }
 
-// .schedule__item {
-//   color: var(--text-color_dark);
-// }
 .schedule__time {
   color: #ABABAB;
 }
@@ -160,9 +143,7 @@
 
 }
 
-// .button_border {
-// background-color: var(--bg-color-top);
-// }
+
 .contacts__btn {
   padding-left: 46px;
   padding-right: 46px;
