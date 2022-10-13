@@ -1,5 +1,5 @@
 @media screen and (min-width: 320px) {
-.bg-img {
+    .bg-img {
         background-image: linear-gradient(var(--bg-color-top), var(--bg-color-top)),
             url(../images/gallery/icebackground-mobile.png),
             linear-gradient(var(--bg-color-top), var(--bg-color-top));
@@ -7,6 +7,7 @@
         background-repeat: no-repeat;
         background-size: 100% 25px, 100% 1166px, 100% 1300px;
     }
+
     .reviews {
         padding-top: 80px;
     }
@@ -88,16 +89,17 @@
 @include mobile {
     .reviews__subject {
         max-width: 100%;
-    }          
+    }
 }
 
-@include tablet {.bg-img {
+@include tablet {
+    .bg-img {
         background-image: linear-gradient(var(--bg-color-top), var(--bg-color-top)),
             url(../images/gallery/icebackground-tablet.jpg),
             linear-gradient(var(--bg-color-top), var(--bg-color-top));
         background-position: top 0px center, top 50px center, top 1070px center;
         background-repeat: no-repeat;
-        background-size: 100% 164px, 100% 958px, 100% 100%;
+        background-size: 768px 164px, 768px 958px, 768px 100%;
 
     }
 
@@ -133,14 +135,15 @@
 
 @include desktop {
     .bg-img {
-            background-image: linear-gradient(var(--bg-color-top), var(--bg-color-top)),
-                url(../images/gallery/icebackground-desktop.jpg),
-                linear-gradient(var(--bg-color-top), var(--bg-color-top));
-            background-position: top 0px center, top 50px center, top 1070px center;
-            background-repeat: no-repeat;
-            background-size: 100% 94px, 100% 1024px, 100% 444px;
-    
-        }
+        background-image: linear-gradient(var(--bg-color-top), var(--bg-color-top)),
+            url(../images/gallery/icebackground-desktop.jpg),
+            linear-gradient(var(--bg-color-top), var(--bg-color-top));
+        background-position: top 0px center, top 50px center, top 1070px center;
+        background-repeat: no-repeat;
+        background-size: 1200px 94px, 1200px 1024px, 1200px 444px;
+
+    }
+
     .reviews {
         padding-top: 128px;
     }

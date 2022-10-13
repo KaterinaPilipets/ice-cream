@@ -1,5 +1,7 @@
 .advantages {
-  background-color: var(--bg-color-top);
+  .container {
+    background-color: var(--bg-color-top);
+  }
 
   &__list {
     display: flex;
