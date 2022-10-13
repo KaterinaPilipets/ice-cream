@@ -1,4 +1,8 @@
 .advantages {
+  .container {
+    background-color: var(--bg-color-top);
+  }
+
   &__list {
     display: flex;
     justify-content: center;
@@ -8,27 +12,33 @@
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 36px;
+
     @include tablet {
       padding-bottom: 40px;
       gap: 80px;
       width: 616px;
     }
+
     @include desktop {
       padding-bottom: 86px;
       gap: 32px;
       width: 1168px;
     }
   }
+
   &__item {
     width: 100%;
     max-width: 230px;
+
     @include tablet {
       max-width: calc((100% - 160px) / 3);
     }
+
     @include desktop {
       max-width: calc((100% - 64px) / 3);
     }
   }
+
   &__number {
     width: 100%;
     text-align: center;
@@ -37,29 +47,34 @@
     font-size: 36px;
     line-height: 1.16;
     letter-spacing: 0.04em;
+
     @include tablet {
       margin-top: 32px;
       margin-bottom: 16px;
       font-size: 48px;
       line-height: 1.22;
     }
+
     @include desktop {
       margin-top: 40px;
       font-size: 58px;
       line-height: 1.22;
     }
   }
+
   &__text {
     width: 100%;
     text-align: center;
     font-weight: 700;
     font-size: 12px;
     line-height: 1.7;
+
     @include tablet {
       font-weight: 400;
       font-size: 14px;
       line-height: 1.74;
     }
+
     @include desktop {
       font-size: 16px;
       line-height: 1.76;
@@ -77,12 +92,15 @@
     margin-left: auto;
     margin-right: auto;
   }
+
   &__cow::before {
     background-image: url(../images/advantages/cow-1x.png);
   }
+
   &__weight::before {
     background-image: url(../images/advantages/weight-1x.png);
   }
+
   &__ice-crema::before {
     background-image: url(../images/advantages/ice-crema-1x.png);
   }

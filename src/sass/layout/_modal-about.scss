@@ -1,0 +1,33 @@
+.about__video {
+    width: 224px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+    @include tablet {
+        width: 448px;
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+
+
+}
+
+.about__iframe {
+    width: 100%;
+    height: 205px;
+}
+
+.about__modal {
+    @include tablet {
+    padding-left: 60px;
+    padding-right: 60px;
+    }
+}
+
+.about__modal-title {
+    text-align: center;
+}
+
+.about__modal-text {
+    letter-spacing: normal;
+}

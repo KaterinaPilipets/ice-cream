@@ -1,4 +1,4 @@
-.page-footer {
+.page-footer .container {
   background-color: var(--bg-color-top);
 }
 
@@ -83,7 +83,7 @@
 }
 
 .page-footer__copyright-container {
-  background-color: var(--bg-color-top);
+
   padding: 16px 20px 62px;
   text-align: center;
 
@@ -96,7 +96,8 @@
 }
 
 .page-footer__container {
-  margin-bottom: 40px;
+
+  padding-bottom: 40px;
 }
 
 .page-footer__copyright-about {
@@ -109,24 +110,29 @@
     justify-content: space-between;
     margin-bottom: 32px;
   }
+
   .page-footer__text-container {
     width: 352px;
   }
+
   .page-footer__title {
     font-size: 26px;
     line-height: 1.23;
     letter-spacing: 0.04em;
     margin-bottom: 9px;
   }
+
   .page-footer__text {
     font-size: 48px;
     line-height: 1.23;
     letter-spacing: 0.06em;
     margin-bottom: 0;
   }
+
   .page-footer__contacts-container {
     padding-top: 68px;
   }
+
   .page-footer__social-network-list {
     gap: 30px;
     margin-bottom: 32px;
@@ -136,18 +142,22 @@
     width: 34px;
     height: 34px;
   }
+
   .page-footer__social-network-item {
     width: 34px;
     height: 34px;
   }
+
   .page-footer__phone-text {
     font-size: 14px;
   }
+
   .page-footer__copyright-container {
     padding-top: 14px;
     padding-bottom: 13px;
     line-height: 1.86;
     letter-spacing: 0.02em;
+
   }
 
   .page-footer__copyright-about {
@@ -171,10 +181,12 @@
   .page-footer__social-network-list {
     margin-bottom: 40px;
   }
+
   .page-footer__phone-text {
     font-size: 16px;
     letter-spacing: 0.02em;
   }
+
   .page-footer__copyright-container {
     font-size: 12px;
 
