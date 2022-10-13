@@ -83,6 +83,7 @@
 }
 
 .page-footer__copyright-container {
+  background-color: var(--bg-color-top);
 
   padding: 16px 20px 62px;
   text-align: center;
@@ -108,7 +109,7 @@
   .page-footer__container {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 32px;
+    // margin-bottom: 32px;
   }
 
   .page-footer__text-container {
@@ -189,8 +190,9 @@
 
   .page-footer__copyright-container {
     font-size: 12px;
-
-    width: 1168px;
+    background-color: var(--bg-color-top);
+    // width: 1168px;
+    width: 1200px;
     padding-top: 11px;
     padding-bottom: 11px;
     margin-left: auto;

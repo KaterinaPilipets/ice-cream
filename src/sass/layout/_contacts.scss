@@ -1,44 +1,45 @@
 .contacts {
-padding-top: 74px;
-padding-bottom: 39px;
+  // padding-top: 74px;
+  padding-bottom: 39px;
 
 
-@include tablet {
-  padding-top: 124px;
-  padding-bottom: 40px;    
+  @include tablet {
+    padding-top: 50px;
+    padding-bottom: 40px;
   }
+
   @include desktop {
-    padding-top: 144px;
-      padding-bottom: 120px;
-      
+    padding-top: 68px;
+    padding-bottom: 120px;
+
   }
 }
 
 
 
 .contacts__list {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   width: 100%;
   align-items: center;
- 
-    color: var(--text-color_dark);
-    font-weight: 500;
+
+  color: var(--text-color_dark);
+  font-weight: 500;
 
   @include tablet {
     flex-direction: row;
     gap: 16px;
-  // width: 528px;
+    // width: 528px;
+  }
+
+  @include desktop {
+    gap: 32px;
+  }
+
+
 }
 
-@include desktop {
-gap: 32px;
-}
-  
-
-    }
- 
 .contacts__item {
   width: 100%;
   max-width: 280px;
@@ -52,18 +53,18 @@ gap: 32px;
   @include tablet {
     max-width: calc((100% - 32px) / 3);
     padding: 40px 24px;
-      font-size: 14px;
+    font-size: 14px;
   }
 
   @include desktop {
     padding: 40px 40px;
-      font-size: 16px;
-     max-width: calc((100% - 64px) / 3);
+    font-size: 16px;
+    max-width: calc((100% - 64px) / 3);
   }
 }
 
 .contacts__name {
- 
+
   // border: 1px solid #e1e1e1;
   border-radius: 4px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -76,81 +77,93 @@ gap: 32px;
   // font-size: 12px;
   // зменшила line-height до 1.33 замість 1.86 по макету, щоб розмір візуально як на макеті
   line-height: 1.33;
-   letter-spacing: 0.04em;
-//   color: var(--text-color_dark);
-  background-color:var(--color-accent);
+  letter-spacing: 0.04em;
+  //   color: var(--text-color_dark);
+  background-color: var(--color-accent);
   margin-bottom: 20px;
+
+  @include tablet {
+    margin-bottom: 32px;
+  }
 }
 
 .contacts__location {
   font-weight: 500;
   // font-size: 12px;
   line-height: 1.86;
-//   color: var(--text-color_dark);
+  //   color: var(--text-color_dark);
   margin-bottom: 8px;
+
+  @include tablet {
+    margin-bottom: 12px;
+  }
 }
 
 .contacts__link {
-   display: block;
+  display: block;
   max-width: 190px;
   color: var(--text-color_address);
   line-height: 1.83;
- padding-bottom: 24px;
-font-style: normal;
+  padding-bottom: 24px;
+  font-style: normal;
 
-@include tablet {
-  max-width: 159px;
-}
-@include desktop {
-  max-width: 100%;
-}
+  @include tablet {
+    max-width: 159px;
+  }
+
+  @include desktop {
+    max-width: 100%;
+  }
 }
 
 .schedule {
   border-top: 1px solid #e1e1e1;
   border-bottom: 1px solid #e1e1e1;
-padding: 24px 0px;
+  padding: 24px 0px;
 }
+
 // .schedule__item {
 //   color: var(--text-color_dark);
 // }
 .schedule__time {
-    color: #ABABAB;
+  color: #ABABAB;
 }
 
 .contacts-inform {
-// color: var(--text-color_dark);
-padding-top: 32px;
-line-height: 1.83;
+  // color: var(--text-color_dark);
+  padding-top: 32px;
+  line-height: 1.83;
 
 }
 
 .contacts-inform__item {
-    line-height: 1.5;
+  line-height: 1.5;
 }
-.contacts__buttons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-    margin-top: 32px;
 
-    @include tablet {
-flex-direction: row;
-align-items: center;
-justify-content: center;
-margin-top: 60px;
-    }
-    @include desktop {
-      margin-top: 64px;
-    }
-  
+.contacts__buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-top: 32px;
+
+  @include tablet {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+  }
+
+  @include desktop {
+    margin-top: 64px;
+  }
+
 }
 
 // .button_border {
 // background-color: var(--bg-color-top);
 // }
 .contacts__btn {
-   padding-left: 46px;
-   padding-right: 46px;
-} 
+  padding-left: 46px;
+  padding-right: 46px;
+}

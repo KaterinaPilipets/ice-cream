@@ -3,9 +3,9 @@
         background-image: linear-gradient(var(--bg-color-top), var(--bg-color-top)),
             url(../images/gallery/icebackground-mobile.png),
             linear-gradient(var(--bg-color-top), var(--bg-color-top));
-        background-position: top 0px center, top 25px center, top 1166px center;
+        background-position: top 0px center, top 25px center, top 1070px center;
         background-repeat: no-repeat;
-        background-size: 100% 25px, 100% 1166px, 100% 1300px;
+        background-size: 100% 1%, 100% 48%, 100% 51%;
     }
 
     .reviews {
@@ -93,13 +93,15 @@
 }
 
 @include tablet {
+
     .bg-img {
+
         background-image: linear-gradient(var(--bg-color-top), var(--bg-color-top)),
             url(../images/gallery/icebackground-tablet.jpg),
             linear-gradient(var(--bg-color-top), var(--bg-color-top));
-        background-position: top 0px center, top 50px center, top 1070px center;
+        background-position: top 0px center, top 164px center, top 1120px center;
         background-repeat: no-repeat;
-        background-size: 768px 164px, 768px 958px, 768px 100%;
+        background-size: 768px 11%, 768px 64%, 768px 25%;
 
     }
 
@@ -128,7 +130,9 @@
 
     .slick-dots {
         position: static;
-        margin-top: 28px;
+        // margin-top: 28px;
+        margin-top: 0px;
+
     }
 
 }
@@ -138,19 +142,34 @@
         background-image: linear-gradient(var(--bg-color-top), var(--bg-color-top)),
             url(../images/gallery/icebackground-desktop.jpg),
             linear-gradient(var(--bg-color-top), var(--bg-color-top));
-        background-position: top 0px center, top 50px center, top 1070px center;
+        background-position: top 0px center, top 95px center, top 1105px center;
         background-repeat: no-repeat;
-        background-size: 1200px 94px, 1200px 1024px, 1200px 444px;
+        background-size: 1200px 5%, 1200px 57%, 1200px 38%;
 
     }
 
     .reviews {
-        padding-top: 128px;
+        padding-top: 80px;
+
+        @include tablet {
+            padding-top: 60px;
+        }
+
+        @include desktop {
+            padding-top: 128px;
+        }
     }
 
     .slick-js {
         padding-right: 96px;
         padding-left: 96px;
+
+    }
+
+
+
+    .slick-initialized {
+        margin-bottom: 0;
     }
 
     .reviews__photo {
