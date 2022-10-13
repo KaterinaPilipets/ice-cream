@@ -108,6 +108,15 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
         width: 367px;
     }
 }
+.animate__heartbeat{
+    animation-name: heartBeat;
+    -webkit-animation-duration: 1.3s;
+    animation-duration: 1.3s;
+    // -webkit-animation-duration: 150ms;
+    animation-duration: 750ms;
+    // -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in;
+}
 
 .hero__part {
     font-size: 34px;
@@ -123,6 +132,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 
 .hero__list {
     display: flex;
+    align-items: center;
 }
 
 .hero__link {
@@ -150,12 +160,13 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
         color: var(--text-color_light);
         border: 2px solid var(--color-hover);
         border-radius: 8px;
-        width: 64px;
-        height: 24px;
     }
 }
 
-
+.first-btn{
+    color: var(--text-color_dark);
+    text-decoration: none;
+}
 
 .hero__text {
     display: none;
