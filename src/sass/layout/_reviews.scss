@@ -1,11 +1,29 @@
+.bg-img {
+    background-color: var(--bg-color-top);
+    width: 100%;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include tablet {
+        max-width: 768px;
+    }
+
+    @include desktop {
+        max-width: 1200px;
+    }
+}
+
+// bg-color-modal
 @media screen and (min-width: 320px) {
     .bg-img {
         background-image: linear-gradient(var(--bg-color-top), var(--bg-color-top)),
+            linear-gradient(var(--bg-color-modal), var(--bg-color-modal)),
             url(../images/gallery/icebackground-mobile.png),
             linear-gradient(var(--bg-color-top), var(--bg-color-top));
-        background-position: top 0px center, top 25px center, top 1070px center;
+        background-position: top 0px center, top 25px center, top 131px center, top 1201px center;
         background-repeat: no-repeat;
-        background-size: 100% 1%, 100% 48%, 100% 51%;
+        background-size: 100% 1%, 100% 5%, cover 43%, 100% 51%;
     }
 
     .reviews {

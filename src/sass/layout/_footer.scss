@@ -1,4 +1,19 @@
-.page-footer .container {
+.page-footer {
+  background-color: var(--bg-color-top);
+
+  width: 100%;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include tablet {
+    max-width: 768px;
+  }
+
+  @include desktop {
+    max-width: 1200px;
+  }
+
   background-color: var(--bg-color-top);
 }
 
@@ -189,10 +204,10 @@
   }
 
   .page-footer__copyright-container {
+
+
     font-size: 12px;
-    background-color: var(--bg-color-top);
-    // width: 1168px;
-    width: 1200px;
+
     padding-top: 11px;
     padding-bottom: 11px;
     margin-left: auto;
