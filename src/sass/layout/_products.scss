@@ -1,19 +1,4 @@
 .products--photo {
-
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    max-width: 480px;
-
-
-    @include tablet {
-        max-width: 768px;
-    }
-
-    @include desktop {
-        max-width: 1200px;
-    }
-
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

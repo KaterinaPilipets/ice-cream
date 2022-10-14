@@ -1,22 +1,3 @@
-.page-footer {
-  background-color: var(--bg-color-top);
-
-  width: 100%;
-  max-width: 480px;
-  margin-left: auto;
-  margin-right: auto;
-
-  @include tablet {
-    max-width: 768px;
-  }
-
-  @include desktop {
-    max-width: 1200px;
-  }
-
-  background-color: var(--bg-color-top);
-}
-
 .page-footer__text-container {
   width: 234px;
   font-weight: 700;
