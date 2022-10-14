@@ -1,9 +1,19 @@
+.modal-franchise {
+    height: 100%;
+    max-height: 674px;
+
+    @include tablet {
+        max-height: 668px;
+    }
+}
+
 .modal-franchise__text {
     margin-bottom: 24px;
     margin-top: 20px;
     width: 100%;
     line-height: 1.4;
     color: var(--text-color_dark);
+
 
     @include tablet {
         margin-top: 24px;
@@ -164,5 +174,3 @@
 .modal-form__input:not(:placeholder-shown):required:invalid {
     border-color: #F44336;
 }
-
-

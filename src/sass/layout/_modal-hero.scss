@@ -1,3 +1,14 @@
+.hero-modal {
+    height: 100%;
+    max-height: 986px;
+
+
+    @include tablet {
+
+        max-height: 644px;
+    }
+}
+
 .modal__close-btn {
     position: absolute;
     padding: 0;

@@ -1,6 +1,8 @@
 .modal {
     position: absolute;
     width: 100%;
+    max-height: 996px;
+
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
@@ -12,10 +14,8 @@
     border: 2px solid var(--color-accent);
     border-radius: 10px;
     transition: transform 700ms ease-in;
-
-    @include mobile {
-        max-width: 280px;
-    }
+    overflow: auto;
+    outline: none;
 
     @include tablet {
         max-width: 568px;
@@ -32,9 +32,9 @@
 
 
 .backdrop.is-hidden .modal {
-    
+
     background-color: var(--color-accent);
-    transform: translate(-50%,100%);
+    transform: translate(-50%, 100%);
 }
 
 .modal__close {
@@ -70,13 +70,3 @@
 //     align-items: center;
 //     justify-content: center;
 // }
-
-
-
-
-
-
-
-
-
-
