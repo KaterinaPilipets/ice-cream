@@ -21,8 +21,7 @@
 .modal-products__title {
   margin-top: 39px;
   margin-bottom: 24px;
-  font-family: 'Montserrat';
-  font-style: normal;
+
   font-weight: 500;
   font-size: 20px;
   line-height: 1.4;
@@ -196,6 +195,7 @@
   margin-bottom: 32px;
   padding-left: 11px;
   padding-top: 11px;
+  resize: none;
 }
 
 .position {
