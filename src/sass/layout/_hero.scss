@@ -80,7 +80,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     .hero {
         background-image: url(../images/hero/hero1-desctop@2x.png), url(../images/hero/hero2-desctop@2x.png), url(../images/hero/hero3-desctop@2x.png);
         background-size: 484px, 1200px, 225px;
-        background-position: bottom -35px right 37px, bottom 0px right 0px;
+        background-position: right 100px bottom -75px, right 0 bottom 0, left 15px bottom 65px;
     }
 }
 
@@ -108,7 +108,8 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
         width: 367px;
     }
 }
-.animate__heartbeat{
+
+.animate__heartbeat {
     animation-name: heartBeat;
     -webkit-animation-duration: 1.3s;
     animation-duration: 1.3s;
@@ -163,7 +164,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     }
 }
 
-.first-btn{
+.first-btn {
     color: var(--text-color_dark);
     text-decoration: none;
 }
@@ -188,6 +189,10 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 
 summary {
     display: block;
+
+    @include tablet {
+        color: var(--font-title);
+    }
 }
 
 summary::-webkit-details-marker {
