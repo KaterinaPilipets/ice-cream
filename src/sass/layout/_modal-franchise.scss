@@ -1,10 +1,10 @@
 .modal-franchise {
-    height: 100%;
-    max-height: 674px;
+    // height: 100%;
+    // max-height: 674px;
 
-    @include tablet {
-        max-height: 668px;
-    }
+    // @include tablet {
+    //     max-height: 700px;
+    // }
 }
 
 .modal-franchise__text {
@@ -172,5 +172,5 @@
 }
 
 .modal-form__input:not(:placeholder-shown):required:invalid {
-border: solid 5px #F44336;
+    border: solid 5px #F44336;
 }
