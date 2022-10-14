@@ -168,9 +168,9 @@
 
 
 .modal-form__input:not(:placeholder-shown):required:valid {
-    border-color: #4CAF50;
+    border: solid 5px #4CAF50;
 }
 
 .modal-form__input:not(:placeholder-shown):required:invalid {
-    border-color: #F44336;
+border: solid 5px #F44336;
 }

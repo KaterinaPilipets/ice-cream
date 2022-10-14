@@ -14,7 +14,7 @@
     border: 2px solid var(--color-accent);
     border-radius: 10px;
     transition: transform 700ms ease-in;
-    overflow: auto;
+    // overflow: auto;
     outline: none;
 
     @include tablet {

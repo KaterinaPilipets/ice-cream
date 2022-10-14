@@ -1,11 +1,9 @@
 .modal-products {
   padding: 28px 20px 32px 20px;
-  max-height: 990px;
+  max-height: 1000px;
   height: 100%;
 
-  @include tablet {
-    max-height: 995px;
-  }
+
 
   overflow-y: auto;
 
@@ -167,9 +165,17 @@
   color: #131313;
 }
 
-.modal-products__form-input:valid {
-  border-color: burlywood;
+.modal-products__form-input:not(:placeholder-shown):required:valid {
+  border: solid 5px #4CAF50;
 }
+
+.modal-products__form-input:not(:placeholder-shown):required:invalid {
+  border: solid 5px #F44336;
+}
+
+// .modal-products__form-input:valid {
+//   border-color: burlywood;
+// }
 
 // .modal-products__form-input:invalid {
 //   border-color: red;
