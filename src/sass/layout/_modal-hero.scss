@@ -40,7 +40,6 @@
     border-radius: 16px;
     position: relative;
     // padding-bottom: 20px;
-
     font-weight: 700;
     text-transform: uppercase;
     line-height: 1.22;
@@ -55,10 +54,15 @@
     }
 }
 
-
 .hero-modal-form {
-
-
+    &__check::before {
+        content: "";
+        height: 132px;
+        width: 132px;
+        border-radius: 50%;
+        position: absolute;
+        top: -50%;
+        left: -1.5%;
     }
 
     &__check.ice-cream::before {
@@ -70,12 +74,11 @@
         background-position-y: -10px, 0;
 
         @media screen and (min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-                background-image: url(../images/modal/modal-hero1@2x.png),
-                    linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7));
-            }
-            
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/modal/modal-hero1@2x.png),
+                linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7));
+        }
     }
 
     &__check.ice-coffee::before {
@@ -87,11 +90,11 @@
         background-position-y: -10px, 0;
 
         @media screen and (min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-                background-image: url(../images/modal/modal-hero2@2x.png),
-                    linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
-            }
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/modal/modal-hero2@2x.png),
+                linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
+        }
     }
 
     &__check.milkshake::before {
@@ -103,18 +106,16 @@
         background-position-y: -10px, 0;
 
         @media screen and (min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-                background-image: url(../images/modal/modal-hero3@2x.png),
-                    linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7));
-            }
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/modal/modal-hero3@2x.png),
+                linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7));
+        }
     }
 }
 
 .hero-modal-form__input:hover+.hero-modal-form__check,
 .hero-modal-form__input:focus+.hero-modal-form__check {
-
-
     &.ice-cream {
         box-shadow: 0 0 0 3px #84A178;
     }
@@ -128,10 +129,7 @@
     }
 }
 
-
-
 .hero-modal-form__input:checked+.hero-modal-form__check {
-
     &.ice-cream {
         background-color: #84A178;
     }
@@ -156,7 +154,6 @@
         border-radius: 10px;
         background-color: rgba(248, 210, 78, 0.1);
         padding: 8px 12px;
-
         font-family: var(--font-top);
         font-size: 12px;
         letter-spacing: 1.4;
@@ -165,9 +162,6 @@
 }
 
 .hero-modal-label {
-
-    
-
     &__input {
         font-size: 12px;
         color: #131313;
@@ -191,16 +185,13 @@
     &__input:not(:placeholder-shown):required:valid {
         border-color: #4CAF50;
     }
-    
+
     &__input:not(:placeholder-shown):required:invalid {
         border-color: #F44336;
     }
-
-   
 }
 
 .hero-modal-message {
-
     &__form {
         font-size: 12px;
         color: #131313;
@@ -211,10 +202,10 @@
         outline: none;
 
         &::placeholder {
-                font-size: 12px;
-                color: #131313;
-                line-height: 1.4;
-            }
+            font-size: 12px;
+            color: #131313;
+            line-height: 1.4;
+        }
     }
 
     &__form:hover,
@@ -237,58 +228,54 @@
         color: var(--text-color_light);
         fill: var(--text-color_light);
     }
-
-
 }
 
 @media screen and (min-width: 768px) {
-    
-.modal-form__title {
-    display: block;
-    text-align: center;
-    margin-bottom: 100px;
+    .modal-form__title {
+        display: block;
+        text-align: center;
+        margin-bottom: 100px;
     }
-       
-.check-group {
+
+    .check-group {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
         align-items: center;
         justify-content: center;
-        
         gap: 32px;
         margin-bottom: 40px;
-        
     }
 
-.input-group {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
-    margin-bottom: 32px;
-    }  
-    
-.hero-modal-label {
-    &__input {
-        font-size: 14px;
-        width: 368px;
-        height: 42px;
-        }
-            &::placeholder {
-                    font-size: 14px;
-                }
+    .input-group {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 32px;
     }
 
-.hero-modal-message {
-
-    &__form {
-        font-size: 14px;
-        width: 368px;
-        height: 84px;
+    .hero-modal-label {
+        &__input {
+            font-size: 14px;
+            width: 368px;
+            height: 42px;
         }
-            &::placeholder {
-                    font-size: 14px;
-                }
+
+        &::placeholder {
+            font-size: 14px;
+        }
+    }
+
+    .hero-modal-message {
+        &__form {
+            font-size: 14px;
+            width: 368px;
+            height: 84px;
+        }
+
+        &::placeholder {
+            font-size: 14px;
+        }
     }
 }
