@@ -131,6 +131,11 @@
     width: 279px;
     height: 300px;
     background-image: url("../images/about/about-cow-mobile.png"), linear-gradient(90deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
+    @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url("../images/about/about-cow-mobile@2x.png"), linear-gradient(90deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
+        }
     box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
     border-radius: 50%;
     background-size: 280px;
@@ -144,6 +149,11 @@
         width: 336px;
         height: 356px;
         background-image: url("../images/about/about-cow-tablet.png"), linear-gradient(90deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
+        @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+                background-image: url("../images/about/about-cow-tablet@2x.png"), linear-gradient(90deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
+            }
         background-size: 336px;
         margin-right: 0;
         margin-left: 0;
@@ -154,6 +164,11 @@
         width: 490px;
         height: 529px;
         background-image: url("../images/about/about-cow-desktop.png"), linear-gradient(90deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
+        @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+            background-image: url("../images/about/about-cow-desktop@2x.png"), linear-gradient(90deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
+            }
         box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
         border-radius: 250px;
         background-size: 490px;
